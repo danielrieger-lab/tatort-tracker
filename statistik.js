@@ -258,7 +258,7 @@ function renderList() {
   list.innerHTML = "";
   if (podium) {
     podium.innerHTML = "";
-    podium.classList.add("hidden");
+    podium.style.display = "none";
   }
 
   let ranked;
@@ -339,7 +339,12 @@ function renderList() {
     listItems = ranked.slice(3);
 
     if (podiumItems.length > 0) {
-      podium.classList.remove("hidden");
+      podium.style.display = "grid";
+
+      const heading = document.createElement("div");
+      heading.className = "stat-podium-heading";
+      heading.textContent = "Gewinnerpodest";
+      podium.appendChild(heading);
 
       podiumItems.forEach((item, index) => {
         const position = `${index + 1}.`;

@@ -535,6 +535,11 @@ button {
   gap: 10px;
 }
 
+.stat-podium-heading {
+  font-family: "Futura Black", "Futura", "Trebuchet MS", sans-serif;
+  opacity: 0.95;
+}
+
 .stat-podium-entry {
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.18);
