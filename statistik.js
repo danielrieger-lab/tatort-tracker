@@ -5,7 +5,6 @@ const EPISODES_SOURCE = "data/tatort-episodes.json";
 
 const modal = document.getElementById("stat-modal");
 const status = document.getElementById("stat-modal-status");
-const podium = document.getElementById("stat-podium");
 const list = document.getElementById("stat-modal-list");
 const hint = document.querySelector(".stat-modal-hint");
 const statTiles = document.querySelectorAll(".stat-tile");
@@ -256,10 +255,6 @@ function closeModal() {
 
 function renderList() {
   list.innerHTML = "";
-  if (podium) {
-    podium.innerHTML = "";
-    podium.style.display = "none";
-  }
 
   let ranked;
 
@@ -334,17 +329,21 @@ function renderList() {
 
   let listItems = ranked;
 
-  if (currentMode === "best" && podium) {
+  if (currentMode === "best") {
     const podiumItems = ranked.slice(0, 3);
     listItems = ranked.slice(3);
 
     if (podiumItems.length > 0) {
-      podium.style.display = "grid";
+      const podiumWrapper = document.createElement("li");
+      podiumWrapper.className = "stat-podium-inline";
 
       const heading = document.createElement("div");
       heading.className = "stat-podium-heading";
       heading.textContent = "Gewinnerpodest";
-      podium.appendChild(heading);
+      podiumWrapper.appendChild(heading);
+
+      const podiumGrid = document.createElement("div");
+      podiumGrid.className = "stat-podium-grid";
 
       podiumItems.forEach((item, index) => {
         const position = `${index + 1}.`;
@@ -360,8 +359,11 @@ function renderList() {
           window.location.href = `index.html?episode=${encodeURIComponent(item.episode.no)}`;
         });
 
-        podium.appendChild(entry);
+        podiumGrid.appendChild(entry);
       });
+
+      podiumWrapper.appendChild(podiumGrid);
+      list.appendChild(podiumWrapper);
     }
   }
 
