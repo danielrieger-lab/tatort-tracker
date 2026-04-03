@@ -563,7 +563,17 @@ div.stat-modal-entry {
   }
 
   .stat-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .rating-row:not(.general-rating):not(.top-fields):not(.character-row) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .rating-row:not(.general-rating):not(.top-fields):not(.character-row) .stars {
+    width: auto;
   }
 
   .stat-modal-dialog {
