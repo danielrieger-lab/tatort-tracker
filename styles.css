@@ -702,8 +702,18 @@ div.stat-modal-entry {
     border-radius: 14px;
   }
 
+  .best-podium {
+    margin-top: 12px;
+    padding: 12px;
+  }
+
+  .best-podium-title {
+    font-size: 0.98rem;
+  }
+
   .stat-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 12px;
   }
 
   .rating-row {
@@ -756,6 +766,7 @@ div.stat-modal-entry {
 
   .best-podium-grid {
     gap: 6px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .best-podium-card {
