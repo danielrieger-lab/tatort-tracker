@@ -1,0 +1,251 @@
+﻿[[Datei:Tatort Logo.svg|rechts|300px]]
+Dieser Artikel gibt einen tabellarischen Überblick über die aktuellen und ehemaligen '''Ermittler''' der deutsch-österreichisch-schweizerischen Fernsehkrimi-Filmreihe '''[[Tatort (Fernsehreihe)|Tatort]]'''. Dabei sind die Figuren und ihre Darsteller nach Ermittlerteam und der Region, in der es hauptsächlich ermittelt, gruppiert.
+
+Während es in den ersten Jahrzehnten der seit 1970 bestehenden Krimireihe hauptsächlich Einzelermittler gab, ermitteln in den Filmen etwa seit den [[1990er]] Jahren verstärkt Ermittlerteams. Das Team mit den meisten Filmen ist das seit 1991 aktive Münchner Duo [[Batic und Leitmayr]] mit derzeit 99 (98 nach Zählung des [[Bayerischer Rundfunk|BR]]) Filmen, der Ermittler mit den meisten Filmen ist [[Ballauf und Schenk|Max Ballauf]] mit 102 Filmen (acht aus Düsseldorf und 94 aus Köln in verschiedenen Teams – Stand 12. Januar 2026) und dienstälteste aktive Ermittlerin ist [[Lena Odenthal]], aktiv seit 1989 (Stand Januar 2025).
+
+== Liste ==
+In der folgenden Übersicht sind aufgeführt:
+* '''Zeitraum:''' Zeitraum der Erstveröffentlichungen der Filme mit dem betreffenden Ermittlerteam.
+* '''Rollen:''' Namen der Hauptfiguren in selber Reihenfolge wie deren Darstellernamen und verlinkt mit dem Hauptartikel zum Ermittlerteam. Einschränkungen der Mitwirkung in Klammern beziehen sich auf die jeweils vorgenannte Figur.
+* '''Darsteller:''' Namen der Darsteller der Hauptfiguren in selber Reihenfolge wie deren Rollennamen. Einschränkungen der Mitwirkung in Klammern beziehen sich auf den vorgenannten Darsteller, die Jahreszahlen beziehen sich auf den Erstveröffentlichungszeitraum der entsprechenden Filme.
+* '''Region:''' Stadt oder Region, in der sich die Dienststelle des Ermittlerteams befindet.
+* '''Filme:''' Anzahl der Tatort-Filme mit dem Team, die im Rahmen einer Gemeinschaftsproduktion deutscher, österreichischer und schweizerischer Rundfunkanstalten entstanden sind und außerhalb von Filmfestivals erstveröffentlicht wurden. Filme, die [[Liste der Tatort-Folgen#ORF-eigene Produktionen|exklusiv für den ORF]] entstanden, werden hier nicht mitgezählt, sondern in der Spalte ''Besonderheiten'' genannt.
+* '''Sender:''' Rundfunkanstalt, in deren Auftrag die Filme produziert wurden.
+
+Dienstgrade, Filmtitel, Beschreibungen und andere Details der Ermittler können den Team- beziehungsweise Figurenartikeln und Filmartikeln entnommen werden.
+
+<onlyinclude>{{Tabellenstile}}
+{| class="wikitable sortable tabelle-kopf-fixiert"
+|- class="hintergrundfarbe6"
+! style="text-align:left" | Zeitraum
+! style="text-align:left" | Rollen
+! style="text-align:left" | Darsteller
+! class="unsortable" | Bild der Darsteller
+! style="text-align:left" | Region
+! style="text-align:left" | Filme
+! style="text-align:left" | Sender
+! style="text-align:left; width:25em;" class="unsortable" | Besonderheiten
+|-
+| data-sort-value="1989" | seit 1989 || data-sort-value="Odenthal" | [[Lena Odenthal|Lena Odenthal,<br />Mario Kopper (Filme 10–66),<br />Johanna Stern (ab Film 60)]] || {{PersonZelle|Ulrike|Folkerts}},<br />[[Andreas Hoppe]] (1996–2018),<br />[[Lisa Bitter]] (ab 2014) || [[Datei:Grimmepreis 2014 002.jpg|200px|zentriert|Ulrike Folkerts, Andreas Hoppe]] || [[Ludwigshafen am Rhein|Ludwigshafen]] || 83 || [[Südwestrundfunk|SWR]] (seit 1998),<br />[[Südwestfunk|SWF]] (bis 1998) ||
+|-
+| data-sort-value="1991" | 1991–2026<ref>{{Internetquelle |url=https://tatort-fans.de/batic-leitmayr-hoeren-auf/ |titel=Servus, Chefs! Batic & Leitmayr hören auf |sprache=de |abruf=2026-03-03}}</ref>|| data-sort-value="Batic" | [[Batic und Leitmayr|Ivo Batic,<br />Franz Leitmayr]] || {{PersonZelle|Miroslav|Nemec}},<br />[[Udo Wachtveitl]] || [[Datei:Grimme-Preis 2011 - Wachtveitl Nemec 1 cropped.JPG|200px|zentriert|Miroslav Nemec und Udo Wachtveitl]] || [[München]] || 99 ([[BR]]: 98)|| [[Bayerischer Rundfunk|BR]],<br />([[Westdeutscher Rundfunk Köln|WDR]])<ref>Der Film [[Tatort: In der Familie|In der Familie, Teil 1]] wurde im Auftrag des WDR produziert, vgl. [https://www.crew-united.com/de/Tatort-In-der-Familie-I__261186.html CrewUnited-Eintrag], abgerufen am 18. September 2022.</ref>||
+|-
+| data-sort-value="1997" | seit 1997 || data-sort-value="Ballauf" | [[Ballauf und Schenk|Max Ballauf,<br />Freddy Schenk]] || {{PersonZelle|Klaus J.|Behrendt}},<br />[[Dietmar Bär]] || [[Datei:WDR-Dreharbeiten zu Tatort Köln „Wacht am Rhein“-8863.jpg|200px|zentriert|Klaus J. Behrendt und Dietmar Bär]] || [[Köln]] || 94 || [[Westdeutscher Rundfunk Köln|WDR]],<br />([[Mitteldeutscher Rundfunk|MDR]])<ref name="wdr-mdr-1">An der Produktion der Crossover-Filme [[Tatort: Quartett in Leipzig|Quartett in Leipzig]] und [[Tatort: Rückspiel|Rückspiel]] waren sowohl WDR als auch MDR beteiligt.</ref><ref name="wdr-mdr-2">An der Produktion der Crossover-Filme [[Tatort: Kinderland|Kinderland]] und [[Tatort: Ihr Kinderlein kommet|Ihr Kinderlein kommet]] waren sowohl WDR als auch MDR beteiligt.</ref> || Die Figur Ballauf gehörte vorher schon zum [[Flemming, Koch und Ballauf|Düsseldorfer Team]] (acht Filme).
+|-
+| data-sort-value="1999" | 1999–2026<ref>{{Internetquelle |url=https://www.sueddeutsche.de/medien/tatort-wien-ende-krassnitzer-neuhauser-fellner-eisner-li.3236684 |titel=Wiener „Tatort“-Team hört auf |werk=Süddeutsche Zeitung |datum=2025-04-14 |sprache=de |abruf=2025-04-14}}</ref> || data-sort-value="Eisner" | [[Moritz Eisner|Moritz Eisner,<br />Bibi Fellner (ab Film 24)]] || {{PersonZelle|Harald|Krassnitzer}},<br />[[Adele Neuhauser]] (ab 2011) || [[Datei:Grimmepreis 2014 090.jpg|200px|zentriert|Harald Krassnitzer und Adele Neuhauser]] || [[Wien]] || 61 || [[Österreichischer Rundfunk|ORF]] ||
+|-
+| data-sort-value="2002" | seit 2002 || data-sort-value="Thiel" | [[Thiel und Boerne|Frank Thiel,<br />Prof. Karl-Friedrich Boerne]] || {{PersonZelle|Axel|Prahl}},<br />[[Jan Josef Liefers]] || <span style="white-space:nowrap;display:flex;align-items:center;">[[Datei:WDR-Dreharbeiten zu Tatort Münster „Lakritz“-6979.jpg|100px|zentriert|alt=Axel Prahl trägt eine graue Strickjacke mit Reißverschluss und darunter ein graues T-Shirt. Darüber trägt er eine dunkelblaue Jacke. Im Hintergrund sind verschwommene Elemente zu erkennen, darunter ein rundes Objekt und ein silberner, spiralförmiger Gegenstand, der möglicherweise Teil einer Armatur ist. Er hat kurzes, helles Haar und blauen Augen. Er lächelt freundlich in die Kamera. Eine Hand ruht auf der Schulter der Person, was auf den Ausschnitt eines Gruppenbildes deuten könnte. Das Foto entstand bei den WDR-Dreharbeiten zu Tatort Münster „Lakritz“-6979.|Axel Prahl]] [[Datei:WDR-Dreharbeiten zu Tatort Münster „Lakritz“-6995.jpg|100px|zentriert|alt=Jan Josef Liefers lächelt freundlich in die Kamera und trägt einen weißen Laborkittel, und eine gemusterte Krawatte. Er hat hellbraunes Haar und hält mit einer Hand den Laborkittel fest. Im Hintergrund ist eine Laborumgebung zu erkennen, mit gefliesten Wänden und einigen Geräten, die schemenhaft sichtbar sind. Das Foto entstand bei den WDR-Dreharbeiten zu Tatort Münster „Lakritz“ in der Rolle des Prof. Dr. Dr. Karl-Friedrich Boerne 2019.|Jan Josef Liefers]]</span> || [[Münster]] || 48 || [[Westdeutscher Rundfunk Köln|WDR]] ||
+|-
+| data-sort-value="2002" | seit 2002 || data-sort-value="Lindholm" | [[Charlotte Lindholm|Charlotte Lindholm,<br />Anaïs Schmitz (Filme 26–28, 30, 31)]] || {{PersonZelle|Maria|Furtwängler}},<br />[[Florence Kasumba]] (2019–2024)<ref>[https://www.ndr.de/kultur/film/Tatort-Ende-fuer-Goettinger-Team-mit-Florence-Kasumba,kasumba106.html ''Tatort: Ende für das Göttinger Team mit Florence Kasumba.''] In: [[NDR]] vom 20. Dezember 2023, abgerufen am 1. Januar 2024.</ref> || <span style="white-space:nowrap;display:flex;align-items:center;">[[Datei:MKr348335 Maria Furtwängler und Florence Kasumba (Bayern-Empfang, Berlinale 2024).jpg|200px|zentriert|Maria Furtwängler und Florence Kasumba]]</span> || [[Hannover]] (außer Filme 26–31),<br />[[Göttingen]] (Filme 26–31) || 32 || [[Norddeutscher Rundfunk|NDR]] ||
+|-
+| data-sort-value="2008" | seit 2008 || data-sort-value="Lannert" | [[Lannert und Bootz|Thorsten Lannert,<br />Sebastian Bootz]] || {{PersonZelle|Richy|Müller}},<br />[[Felix Klare]] || <span style="white-space:nowrap;display:flex;align-items:center;">[[Datei:Geheimniskrämer - 2018-01-26-2056.jpg|100px|zentriert|Richy Müller]] [[Datei:Set-Termin WDR ARD-Fernsehfilm „Momentversagen“-Felix Klare-9891.jpg|100px|zentriert|Felix Klare]]</span> || [[Stuttgart]] || 36 || [[Südwestrundfunk|SWR]] ||
+|-
+| data-sort-value="2010" | seit 2010 || data-sort-value="Murot" | [[Felix Murot]] || {{PersonZelle|Ulrich|Tukur}} || [[Datei:Ulrich Tukur (Berlin Film Festival 2009) (cropped).jpg|100px|zentriert|Ulrich Tukur]] || [[Wiesbaden]] || 14 || [[Hessischer Rundfunk|HR]] ||
+|-
+| data-sort-value="2012" | seit 2012
+| data-sort-value="Faber" | [[Faber, Bönisch und Dalay|Peter Faber,<br />Martina Bönisch (bis Film 21),<br />Nora Dalay (bis Film 16),<br />Daniel Kossik (bis Film 10),<br />Jan Pawlak (Filme 11–24),<br />Rosa Herzog (Filme 18–29),<br />Ira Klasnić (ab Film 24)]]<ref name="dasTeamEpisodenzählung">Der Film ''[[Tatort: Das Team|Das Team]]'' wird hier nicht mitgezählt.</ref>
+| {{PersonZelle|Jörg|Hartmann|Jörg Hartmann (Schauspieler)}},<br />[[Anna Schudt]] (bis 2022),<br />[[Aylin Tezel]] (bis 2020),<br />[[Stefan Konarske]] (bis 2017),<br />[[Rick Okon]] (2018–2024),<br />[[Stefanie Reinsperger]] (2021–2026),<br />[[Alessija Lause]] (ab 2024)<ref>[https://www.t-online.de/unterhaltung/tv/tatort/id_100346798/ard-ausstieg-von-rick-okon-tatort-bekommt-neue-kommissarin.html ''Dortmunder "Tatort" bekommt doch eine neue Kommissarin.''] In: [[T-Online]] vom 19. Februar 2024, abgerufen am 7. April 2024.</ref>
+| [[Datei:Tatort Dortmund investigators (cropped).jpg|200px|zentriert|Jörg Hartmann, Aylin Tezel, Anna Schudt, Stefan Konarske]]
+| [[Dortmund]] || 29<ref name="dasTeamEpisodenzählung" />
+| [[Westdeutscher Rundfunk Köln|WDR]],<br />([[Bayerischer Rundfunk|BR]])<ref>Der Film [[Tatort: In der Familie|In der Familie, Teil 2]] wurde im Auftrag des Bayerischen Rundfunks produziert, vgl. [https://www.crew-united.com/de/Tatort-In-der-Familie-II__267201.html CrewUnited-Eintrag], abgerufen am 18. September 2022.</ref>
+| Die Figuren Faber und Bönisch gehören überdies zum Ermittlerteam im ''Tatort''-Film ''[[Tatort: Das Team|Das Team]]''.
+|-
+| data-sort-value="2013" | seit 2013 || data-sort-value="Falke" | [[Thorsten Falke|Thorsten Falke,<br />Katharina Lorenz (bis Film 6),<br />Julia Grosz (Filme 7–19),<br />Mario Schmitt (ab Film 22)]] || {{PersonZelle|Wotan|Wilke Möhring}},<br />[[Petra Schmidt-Schaller]] (bis 2015),<br />[[Franziska Weisz]] (2016–2024)<ref>[https://www.ndr.de/kultur/film/Tatort-Thorsten-Falke-ermittelt-in-naechsten-beiden-Faellen-alleine,falke208.html ''Tatort: Thorsten Falke ermittelt in nächsten beiden Fällen alleine Stand: 20.09.2023 12:30 Uhr.''] In: [[NDR]] vom 20. September 2023, abgerufen am 1. Januar 2024.</ref>,<br />[[Denis Moschitto]] (seit 2025) || <span style="white-space:nowrap;display:flex;align-items:center;">[[Datei:Deutscher Fernsehpreis 2012 - Wotan Wilke Möhring 1 (cropped).jpg|100px|zentriert|Wotan Wilke Möhring]] [[Datei:MJK 68724 Franziska Weisz (Bayern-Empfang, Berlinale 2020).jpg|100px|zentriert|Franziska Weisz]]</span> || [[Hamburg]] || 23 || [[Norddeutscher Rundfunk|NDR]] ||
+|-
+| data-sort-value="2015" | seit 2015 || data-sort-value="Karow" | [[Robert Karow|Robert Karow,<br />Nina Rubin (bis Film 15),<br />Susanne Bonard (Filme 17–22)]] || {{PersonZelle|Mark|Waschke}},<br />[[Meret Becker]] (bis 2022),<br />[[Corinna Harfouch]] (2023–2026)<ref>[https://www.swp.de/unterhaltung/tv/tatort-berlin-karow-bonard-darsteller-mark-waschke-corinna-harfouch-folgen-68121137.html ''Alle Infos zum Krimi mit Karow.''] In: Südwest Presse vom 18. Dezember 2022, abgerufen am 23. Dezember 2022.</ref> || <span style="white-space:nowrap;display:flex;align-items:center;">[[Datei:Mark Waschke.jpg|100px|zentriert|Mark Waschke]] [[Datei:Meret Becker Berlinale 2008.jpg|100px|zentriert|Meret Becker]] [[Datei:MJK30848 Corinna Harfouch (Berlinale 2017) (cropped).jpg|100px|zentriert|Corinna Harfouch]]</span> || [[Berlin]] || 22 || [[Rundfunk Berlin-Brandenburg|RBB]] ||
+|-
+| data-sort-value="2015" | seit 2015 || data-sort-value="Voss" | [[Franken-Tatort|Felix Voss,<br />Paula Ringelhahn (bis Film 10)]], Emilia Rathgeber (ab Film 12) || {{PersonZelle|Fabian|Hinrichs}},<br />[[Dagmar Manzel]] (bis 2024)<ref>[https://www.t-online.de/unterhaltung/tv/tatort/id_100233902/-tatort-letzter-fall-mit-kommissarin-paula-ringelhahn.html ''"Tatort"-Aus für Kommissarin Ringelhahn – Dagmar Manzel hört auf.''] In: [[T-Online]] vom 30. August 2023, abgerufen am 1. Januar 2024.</ref>, [[Rosalie Thomass]] (ab 2026)|| <span style="white-space:nowrap;display:flex;align-items:center;">[[Datei:2017 BR im Gespraech - Tatort - Fabian Hinrichs - by 2eight - 8SC4628.jpg|100px|zentriert|Fabian Hinrichs]] [[Datei:2016 Dagmar Manzel - by 2eight - 8SC2426.jpg|100px|zentriert|Dagmar Manzel]]</span> || [[Nürnberg]] || 11 || [[Bayerischer Rundfunk|BR]] ||
+|-
+| data-sort-value="2016" | seit 2016 || data-sort-value="Gorniak" | [[Gorniak, Winkler und Schnabel|Karin Gorniak (bis Film 18),<br />Henni Sieland (bis Film 6),<br />Leonie Winkler (ab Film 7),<br />Peter Michael Schnabel]] || {{PersonZelle|Karin|Hanczewski}} (bis 2025),<ref>[https://www.mdr.de/nachrichten/sachsen/dresden/dresden-radebeul/tatort-schauspielerin-karin-hanczewski-ausstieg-100.html ''Tatort Dresden: Kommissarin Gorniak steigt aus.''] In: [[Mitteldeutscher Rundfunk|MDR]] vom 10. Mai 2023, abgerufen am 13. Mai 2023.</ref><br />[[Alwara Höfels]] (bis 2018),<br />[[Cornelia Gröschel]] (ab 2019),<br />[[Martin Brambach]] || <span style="white-space:nowrap;display:flex;align-items:center;">[[Datei:Martin Brambach Grimmepreis 2014.jpg|100px|zentriert|Martin Brambach]] [[Datei:2018-01-26-DFP 2018-6574.jpg|100px|zentriert|Cornelia Gröschel]]</span> || [[Dresden]] || 20 || [[Mitteldeutscher Rundfunk|MDR]] ||
+|-
+| data-sort-value="2017" | seit 2017 || data-sort-value="Tobler" | [[Tobler und Berg|Franziska Tobler,<br />Friedemann Berg (außer Film 3),<br />Luka Weber (Film 3)]] || {{PersonZelle|Eva|Löbau}},<br />[[Hans-Jochen Wagner]],<br />[[Carlo Ljubek]] (2018) || <span style="white-space:nowrap;display:flex;align-items:center;">[[Datei:Eva Löbau cropped.jpg|100px|zentriert|Eva Löbau]] [[Datei:Hans-Jochen Wagner cropped.jpg|100px|zentriert|Hans-Jochen Wagner]]</span> || [[Freiburg im Breisgau|Freiburg]] || 16 || [[Südwestrundfunk|SWR]] ||
+|-
+| data-sort-value="2020" | seit 2020 || data-sort-value="Schürk" | [[Schürk, Hölzer, Baumann und Heinrich|Adam Schürk,<br />Leo Hölzer,<br />Esther Baumann,<br />Pia Heinrich]]|| {{PersonZelle|Daniel|Sträßer}},<br />[[Vladimir Burlakov]], <br />[[Brigitte Urhausen]], <br />[[Ines Marie Westernströer]]|| <span style="white-space:nowrap;display:flex;align-items:center;">[[Datei:Daniel Sträßer by Niklas Vogt.jpg|100px|zentriert|Daniel Sträßer]] [[Datei:2016194203549 2016-07-12 Fotoprobe Nibelungen Festspiele Worms Gold - Sven - 1D X - 0133 - DV3P2602 mod.jpg|100px|zentriert|Vladimir Burlakov]]</span> || [[Saarbrücken]] || 7 || [[Saarländischer Rundfunk|SR]] ||
+|-
+| data-sort-value="2020" | seit 2020 || data-sort-value="Grandjean" | [[Grandjean und Ott|Isabelle Grandjean,<br />Tessa Ott]] || {{PersonZelle|Anna Pieri|Zuercher}},<br />[[Carol Schuler]] || [[Datei:Carol Schuler Nachtlärm.jpg|100px|zentriert|Carol Schuler]] || [[Zürich]] || 9 || [[Schweizer Radio und Fernsehen|SRF]] ||
+|-
+| data-sort-value="2021" | seit 2021 || data-sort-value="Moormann" | [[Moormann, Andersen und Selb|Liv Moormann,<br />Linda Selb,<br />Mads Andersen (Filme 1, 2, 4)]] || {{PersonZelle|Jasna Fritzi|Bauer}},<br />[[Luise Wolfram]],<br />[[Dar Salim]] (2021, 2023) || <span style="white-space:nowrap;display:flex;align-items:center;">[[Datei:MJK 67883 Jasna Fritzi Bauer (Berlinale 2020).jpg|100px|zentriert|Jasna Fritzi Bauer]] [[Datei:LuiseWolfram.jpg|100px|zentriert|Luise Wolfram]]</span> || [[Bremen]] || 8 || [[Radio Bremen]] || Die Figur Linda Selb gehörte auch schon zum [[Lürsen und Stedefreund|vorherigen Bremer Ermittlerteam]].
+|-
+| data-sort-value="2025" | seit 2025 || data-sort-value="Azadi" | [[Azadi und Kulina|Maryam Azadi,<br />Hamza Kulina]] || {{PersonZelle|Melika|Foroutan}},<br />[[Edin Hasanović]] || <span style="white-space:nowrap;display:flex;align-items:center;">[[Datei:MKr25013 Melika Foroutan (arte-Empfang, Berlinale 2023).jpg|100px|zentriert|Melika Foroutan]] [[Datei:Edin Hasanović 2018.jpg|100px|zentriert|Edin Hasanović]]</span> || [[Frankfurt am Main]] || 3 || [[Hessischer Rundfunk|HR]] ||
+|-
+| data-sort-value="2026" | ab 2026 || data-sort-value="Krieger" | [[Krieger und Sahin|Elli Krieger,<br />Mila Sahin]]<ref name="schuch">[https://www.stern.de/kultur/film/karoline-schuch--sie-ist-die-neue-im--tatort--team-aus-kiel-35124826.html ''Sie ist die Neue im "Tatort"-Team aus Kiel.''] In: [[Stern.de]] vom 8. Oktober 2024, abgerufen am 11. Oktober 2024.</ref> || {{PersonZelle|Karoline|Schuch}},<br />[[Almila Bagriacik]] || <span style="white-space:nowrap;display:flex;align-items:center;">[[Datei:2021-09-16-Karoline Schuch Deutscher Fernsehpreis 2021 -2461.jpg|100px|zentriert|Karoline Schuch]] [[Datei:2018-01-26-DFP 2018-6638.jpg|100px|zentriert|Almila Bagriacik]]</span> || [[Kiel]] || 0 || [[NDR]] || Die Figur Mila Sahin gehörte vorher schon zum Team um Klaus Borowski.
+<noinclude>
+|-
+| 2003–2025 || data-sort-value="Borowski" | [[Klaus Borowski|Klaus Borowski, <br />Frieda Jung (bis Film 14),<br />Sarah Brandt (Filme 17–30),<br />Mila Sahin (ab Film 32)]]|| {{PersonZelle|Axel|Milberg}} (bis 2025),<ref name="schuch" /><br />[[Maren Eggert]] (bis 2010),<br />[[Sibel Kekilli]] (2011–2017),<br />[[Almila Bagriacik]] (ab 2018)|| <span style="white-space:nowrap;display:flex;align-items:center;">[[Datei:MJK 37063 Axel Milberg (arte Empfang, Berlinale 2019).jpg|100px|zentriert|Axel Milberg]] [[Datei:2018-01-26-DFP 2018-6638.jpg|100px|zentriert|Almila Bagriacik]]</span> || [[Kiel]] || 44 || [[Norddeutscher Rundfunk|NDR]] || Die Figur Borowski ging aus der Krimireihe ''[[Stahlnetz]]'' hervor.
+|-
+| 2015–2024 || data-sort-value="Janneke" | [[Janneke und Brix|Anna Janneke,<br />Paul Brix]] || {{PersonZelle|Margarita|Broich}},<br />[[Wolfram Koch (Schauspieler)|Wolfram Koch]] || <span style="white-space:nowrap;display:flex;align-items:center;">[[Datei:Settermin zum Drehstart für „Aufbruch“--2105.jpg|100px|zentriert|Margarita Broich]] [[Datei:MJK 12140 Wolfram Koch (Hessen-Empfang, Berlinale 2018).jpg|100px|zentriert|Wolfram Koch]]</span> || [[Frankfurt am Main]] || 19 || [[Hessischer Rundfunk|HR]] ||
+|-
+| 2016–2023 || data-sort-value="Berlinger" | [[Ellen Berlinger|Ellen Berlinger,<br />Martin Rascher (Filme 2–4)]] || {{PersonZelle|Heike|Makatsch}},<br />[[Sebastian Blomberg]] (2018–2022) || <span style="white-space:nowrap;display:flex;align-items:center;">[[Datei:MJKr01619 Heike Makatsch (NRW-Empfang, Berlinale 2020).jpg|100px|zentriert|Heike Makatsch]] [[Datei:Sebastian Blomberg (cropped).jpg|100px|zentriert|Sebastian Blomberg]]</span> || [[Mainz]] (ab Film 2),<br />[[Freiburg im Breisgau|Freiburg]] (Film 1) || 5 || [[Südwestrundfunk|SWR]] ||
+|-
+| 2013–2021 || data-sort-value="Lessing" | [[Lessing und Dorn|Lessing,<br />Kira Dorn]] || {{PersonZelle|Christian|Ulmen}},<br />[[Nora Tschirner]] || <span style="white-space:nowrap;display:flex;align-items:center;">[[Datei:Christian Ulmen Berlinale 2008 (cropped 2).jpg|100px|zentriert|Christian Ulmen]] [[Datei:Nora Tschirner Romy 2019 (cropped).jpg|100px|zentriert|Nora Tschirner]]</span> || [[Weimar]] || 11 || [[Mitteldeutscher Rundfunk|MDR]] ||
+|-
+| 2013–2020<ref>[https://www.merkur.de/tv/neue-darsteller-inflation-koste-agentur-til-schweiger-tatort-aus-ard-neue-richtung-stars-abgesetzt-92467927.html ''Kein „Tatort“ mit Til Schweiger mehr: ARD plant komplett neue Richtung der Krimireihe.''] In: [[Merkur.de]] vom 19. August 2023, abgerufen am 16. September 2023.</ref>|| data-sort-value="Tschiller" | [[Tschiller und Gümer|Nick Tschiller,<br />Yalcin Gümer]] || {{PersonZelle|Til|Schweiger}},<br />[[Fahri Yardım]] || <span style="white-space:nowrap;display:flex;align-items:center;">[[Datei:Til Schweiger - Jan Žižka (Film, 2020).jpg|100px|zentriert|Til Schweiger]] [[Datei:Fahri Yardım.jpg|100px|zentriert|Fahri Yardım]]</span> || [[Hamburg]] || 6 || [[Norddeutscher Rundfunk|NDR]] ||
+|-
+| 2020 || data-sort-value="Faber" | [[Faber und Bönisch|Peter Faber,<br />Martina Bönisch]],<br />[[Thiel und Boerne#Nadeshda Krusenstern|Nadeshda Krusenstern]],<br />Marcus Rettenbach,<br />Franz Mitschowski,<br />Sascha Ziesing,<br />Nadine Möller || {{PersonZelle|Jörg|Hartmann|Jörg Hartmann (Schauspieler)}},<br />[[Anna Schudt]],<br />[[Friederike Kempter]],<br />[[Ben Becker]],<br />[[Nicholas Ofczarek]],<br />[[Friedrich Mücke]],<br />[[Elena Uhlig]] || [[Datei:120305-uw00758 (cropped).jpg|200px|zentriert|Jörg Hartmann, Anna Schudt]] || [[Nordrhein-Westfalen]] || [[Tatort: Das Team|1]] || [[Westdeutscher Rundfunk Köln|WDR]] || Dieses Ermittlerteam gehört zu den Protagonisten des improvisierten ''Tatort''-Films ''[[Tatort: Das Team|Das Team]]''. Es besteht aus bereits zuvor im ''Tatort'' aufgetretenen Ermittlern wie auch aus neuen Kommissaren.
+|-
+| 2013–2019 || data-sort-value="Stellbrink" | [[Stellbrink und Marx|Jens Stellbrink,<br />Lisa Marx]] || {{PersonZelle|Devid|Striesow}},<br />[[Elisabeth Brück]] || [[Datei:Devid Striesow Berlinale 2010 (cropped).jpg|100px|zentriert|Devid Striesow]] || [[Saarbrücken]] || 8 || [[Saarländischer Rundfunk|SR]] ||
+|-
+| 2011–2019 || data-sort-value="Flückiger" | [[Flückiger und Ritschard|Reto Flückiger,<br />Liz Ritschard (ab Film 2)]] || {{PersonZelle|Stefan|Gubser}},<br />[[Delia Mayer]] (ab 2012) ||  || [[Luzern]] || 17 || [[Schweizer Radio und Fernsehen|SRF]] || Die Figur Flückiger gehörte vorher schon zum [[Blum und Perlmann|Konstanzer Ermittlerteam]].
+|-
+| 1997–2019 || data-sort-value="Lürsen" | [[Lürsen und Stedefreund|Inga Lürsen,<br />Nils Stedefreund (ab Film 6)]] || {{PersonZelle|Sabine|Postel}},<br />[[Oliver Mommsen]] (ab 2001) || <span style="white-space:nowrap;display:flex;align-items:center;">[[Datei:Sabine Postel (cropped).jpg|100px|zentriert|Sabine Postel]] [[Datei:2012-05-31 Oliver Mommsen, Studio Hamburg Nachwuchspreis DSCF0558 cropped.jpg|100px|zentriert|Oliver Mommsen]]</span> || [[Freie Hansestadt Bremen|Bremen]] || 39 || [[Radio Bremen|Radio<br />Bremen]],<br />([[Westdeutscher Rundfunk|WDR]])<ref>Mindestens die Filme [[Tatort: Tote Männer|Tote Männer]], [[Tatort: Königskinder|Königskinder]] und [[Tatort: Stille Wasser|Stille Wasser]] entstanden in Kooperation von Radio Bremen mit dem Westdeutschen Rundfunk.</ref> ||
+|-
+| 2002–2016 || data-sort-value="Blum" | [[Blum und Perlmann|Klara Blum,<br />Kai Perlmann (ab Film 5)]] || {{PersonZelle|Eva|Mattes}},<br />[[Sebastian Bezzel]] (ab 2004) || <span style="white-space:nowrap;display:flex;align-items:center;">[[Datei:2012-05-31 Studio Hamburg Nachwuchspreis DSCF0369.jpg|100px|zentriert|Eva Mattes]] [[Datei:2017 Sebastian Bezzel - by 2eight - DSC5884.jpg|100px|zentriert|Sebastian Bezzel]]</span> || [[Konstanz]] || 31 || [[Südwestrundfunk|SWR]],<br />[[Schweizer Fernsehen|SF]],<br />[[Schweizer Radio und Fernsehen|SRF]] ||
+|-
+| 2011–2015 || data-sort-value="Steier" | [[Steier und Mey|Frank Steier,<br />Conny Mey (bis Film 5)]] || {{PersonZelle|Joachim|Król}},<br />[[Nina Kunzendorf]] (bis 2013) || <span style="white-space:nowrap;display:flex;align-items:center;">[[Datei:Joachim Król (Berlin Film Festival 2009) small-sized cropped.jpg|100px|zentriert|Joachim Król]] [[Datei:Grimme-Preis 2011 - Nina Kunzendorf-cropped.JPG|100px|zentriert|Nina Kunzendorf]]</span> || [[Frankfurt am Main]] || 7 || [[Hessischer Rundfunk|HR]] ||
+|-
+| 2008–2015 || data-sort-value="Saalfeld" | [[Saalfeld und Keppler|Eva Saalfeld,<br />Andreas Keppler]] || {{PersonZelle|Simone|Thomalla}},<br />[[Martin Wuttke]] || [[Datei:Tatort Keppler Saalfeld.jpg|200px|zentriert|Martin Wuttke, Simone Thomalla]] || [[Leipzig]] || 21 || [[Mitteldeutscher Rundfunk|MDR]],<br />([[Westdeutscher Rundfunk|WDR]])<ref name="wdr-mdr-2" /> ||
+|-
+| 2013–2014 || data-sort-value="Funck" | [[Funck, Schaffert und Grewel|Henry Funck,<br />Maik Schaffert,<br />Johanna Grewel]] || {{PersonZelle|Friedrich|Mücke}},<br />[[Benjamin Kramme]],<br />[[Alina Levshin]] || <span style="white-space:nowrap;display:flex;align-items:center;">[[Datei:2017 Friedrich Muecke - by 2eight - DSC5929.jpg|100px|zentriert|Friedrich Mücke]] [[Datei:Alina Levshin.jpg|100px|zentriert|Alina Levshin]]</span> || [[Erfurt]] || 2 || [[Mitteldeutscher Rundfunk|MDR]] ||
+|-
+| 1999–2014 || data-sort-value="Ritter" | [[Ritter und Stark|Till Ritter (bis Film 36),<br />Robert Hellmann (bis Film 6),<br />Felix Stark (ab Film 7)]] || {{PersonZelle|Dominic|Raacke}},<br />[[Stefan Jürgens]] (bis 2000),<br />[[Boris Aljinovic]] (ab 2001) || <span style="white-space:nowrap;display:flex;align-items:center;">[[Datei:Frankfurter Buchmesse 2011 - Dominic Raacke (cropped).JPG|100px|zentriert|Dominic Raacke]] [[Datei:Boris Aljinovic 0026 (cropped).jpg|100px|zentriert|Boris Aljinovic]]</span> || [[Berlin]] || 37 || [[Sender Freies Berlin|SFB]] (bis 2003),<br />[[Rundfunk Berlin Brandenburg|RBB]] (ab 2003) ||
+|-
+| 2008–2012 || data-sort-value="Batu" | [[Cenk Batu]] || {{PersonZelle|Mehmet|Kurtuluş}} || [[Datei:Mehmet Kurtuluş.jpg|100px|zentriert|Mehmet Kurtuluş]] || [[Hamburg]] || 6 || [[Norddeutscher Rundfunk|NDR]] ||
+|-
+| 2006–2012 || data-sort-value="Kappl" | [[Kappl und Deininger|Franz Kappl,<br />Stefan Deininger]] || {{PersonZelle|Maximilian|Brückner}},<br />[[Gregor Weber (Schauspieler)|Gregor Weber]] || <span style="white-space:nowrap;display:flex;align-items:center;">[[Datei:2017 Maximilian Brueckner - by 2eight - DSC5552.jpg|100px|zentriert|Maximilian Brückner]] [[Datei:Gregor Weber auf der Frankfurter Buchmesse 2016.jpg|100px|zentriert|Gregor Weber]]</span> || [[Saarbrücken]] || 7 || [[Saarländischer Rundfunk|SR]] || Die Figur Deininger gehörte zuvor schon zum Team von [[Max Palu]].
+|-
+| 2002–2010 || data-sort-value="Dellwo" | [[Dellwo und Sänger|Fritz Dellwo,<br />Charlotte Sänger]] || {{PersonZelle|Jörg|Schüttauf}},<br />[[Andrea Sawatzki]] || <span style="white-space:nowrap;display:flex;align-items:center;">[[Datei:MJK 70112 Jörg Schüttauf (Hessen-Empfang, Berlinale 2020).jpg|100px|zentriert|Jörg Schüttauf]] [[Datei:Andrea Sawatzki Berlinale 2010.jpg|100px|zentriert|Andrea Sawatzki]]</span> || [[Frankfurt am Main]] || 18 || [[Hessischer Rundfunk|HR]] ||
+|-
+| 2001–2008 || data-sort-value="Casstorff" | [[Casstorff und Holicek|Jan Casstorff,<br />Eduard Holicek]] || {{PersonZelle|Robert|Atzorn}},<br />[[Tilo Prückner]] || <span style="white-space:nowrap;display:flex;align-items:center;">[[Datei:Grimme-Preis 2013 Presseempfang Robert Atzorn mk (cropped 1-1).jpg|100px|zentriert|Robert Atzorn]] [[Datei:MJK 12042 Tilo Prückner (Berlinale 2018).jpg|100px|zentriert|Tilo Prückner]]</span> || [[Hamburg]] || 15 || [[Norddeutscher Rundfunk|NDR]] ||
+|-
+| 1992–2007 || data-sort-value="Ehrlicher" | [[Ehrlicher und Kain|Bruno Ehrlicher,<br />M. Kain]] || {{PersonZelle|Peter|Sodann}},<br />[[Bernd Michael Lade]] || [[Datei:Peter Sodann Worms cropped.jpg|100px|zentriert|Peter Sodann]] || [[Dresden]] (bis Fall 21),<br />[[Leipzig]] (ab Fall 22) || 45 || [[Mitteldeutscher Rundfunk|MDR]],<br />[[Deutscher Fernsehfunk|DFF]] (1992),<br />([[Westdeutscher Rundfunk|WDR]])<ref name="wdr-mdr-1" /> ||
+|-
+| 1992–2007 || data-sort-value="Bienzle" | [[Ernst Bienzle|Ernst Bienzle,<br />Günter Gächter]] || {{PersonZelle|Dietz-Werner|Steck}},<br />[[Rüdiger Wandel]] ||  || [[Stuttgart]] || 25 || [[Südwestrundfunk|SWR]] (ab 1998)<br />[[Süddeutscher Rundfunk|SDR]] (bis 1998) ||
+|-
+| 1988–2005 || data-sort-value="Palu" | [[Max Palu|Max Palu,<br />Stephan Deininger (ab Film 12)]] || {{PersonZelle|Jochen|Senf}},<br />[[Gregor Weber (Schauspieler)|Gregor Weber (ab 2001)]] || [[Datei:Gregor Weber auf der Frankfurter Buchmesse 2016.jpg|100px|zentriert|Gregor Weber]] || [[Saarbrücken]] || 18 || [[Saarländischer Rundfunk|SR]] || Die Figur Deininger gehörte danach auch zum Team von [[Kappl und Deininger|Franz Kappl]].
+|-
+| 1993–2002 || data-sort-value="von Burg" | [[Philipp von Burg|Philipp von Burg,<br />Markus Gertsch]] || {{PersonZelle|László I.|Kish}},<br />[[Ernst C. Sigrist]] || [[Datei:László Kish (cropped).jpg|100px|zentriert|László Kish]] || [[Bern]] || 9 || [[SF DRS]] ||
+|-
+| 1985–2001 || data-sort-value="Brinkmann" | [[Edgar Brinkmann]] || {{PersonZelle|Karl-Heinz|von Hassel}} ||  || [[Frankfurt am Main]] || 28 || [[Hessischer Rundfunk|HR]] ||
+|-
+| 1984–2001 || data-sort-value="Stoever" | [[Stoever und Brockmöller|Paul Stoever,<br />Peter Brockmöller (ab Film 4)]] || {{PersonZelle|Manfred|Krug}},<br />[[Charles Brauer]] (ab 1986) || <span style="white-space:nowrap;display:flex;align-items:center;">[[Datei:Manfred Krug 001.jpg|100px|zentriert|Manfred Krug]] [[Datei:Charles Brauer (deutscher Schauspieler).jpg|100px|zentriert|Charles Brauer]]</span> || [[Hamburg]] || 41 || [[Norddeutscher Rundfunk|NDR]] ||
+|-
+| 1996–1998 || data-sort-value="Roiter" | [[Roiter und Zorowski|Ernst Roiter,<br />Michael Zorowski]] || {{PersonZelle|Winfried|Glatzeder}},<br />[[Robinson Reichel]] || <span style="white-space:nowrap;display:flex;align-items:center;">[[Datei:Winfried Glatzeder Berlinale 2008.jpg|100px|zentriert|Winfried Glatzeder]] [[Datei:Robinson Reichel 2017.jpg|100px|zentriert|Robinson Reichel]]</span> || [[Berlin]] || 12 || [[Sender Freies Berlin|SFB]] ||
+|-
+| 1997 || data-sort-value="Kant" | [[Paul Kant (Tatort-Figur)|Paul Kant]],<br />Jakob Varanasi || {{PersonZelle|Wolfgang|Hübsch}},<br />[[Johann Nikolussi]] ||  || [[Wien]] || 2 || [[Österreichischer Rundfunk|ORF]] ||
+|-
+| 1997 || data-sort-value="Sommer" | [[Die Kommissarin (Fernsehserie)#Filme innerhalb der Reihe Tatort|Lea Sommer]] || {{PersonZelle|Hannelore|Elsner}} || [[Datei:Hessischer Film- und Kinopreis 2012 - Hannelore Elsner 1 (cropped).jpg|100px|zentriert|Hannelore Elsner]] || [[Hamburg]] || 2 || [[Norddeutscher Rundfunk|NDR]] || Die Figur Lea Sommer ging aus der Fernsehserie ''[[Die Kommissarin (Fernsehserie)|Die Kommissarin]]'' hervor.
+|-
+| 1992–1997 || data-sort-value="Flemming" | [[Flemming, Koch und Ballauf|Bernd Flemming,<br />Miriam Koch,<br />Max Ballauf (bis Film 8)]] || {{PersonZelle|Martin|Lüttge}},<br />[[Roswitha Schreiner]],<br />[[Klaus J. Behrendt]] (bis 1994) || [[Datei:Wikipedia behrendt k 1(c)alex trebus.JPG|100px|zentriert|Klaus J. Behrendt]] || [[Düsseldorf]] || 15 || [[Westdeutscher Rundfunk Köln|WDR]] || Die Figur Ballauf gehörte danach zum [[Ballauf und Schenk|Kölner Ermittlerteam]].
+|-
+| 1996 || data-sort-value="Becker" | Max Becker || {{PersonZelle|Klaus|Wildbolz}} ||  || [[Wien]] || [[Tatort: Mein ist die Rache|1]] || [[Österreichischer Rundfunk|ORF]] ||
+|-
+| 1989–1996 || data-sort-value="Fichtl" | [[Michael Fichtl]] || {{PersonZelle|Michael|Janisch}} ||  || [[Wien]] || 8 || [[Österreichischer Rundfunk|ORF]] || Zuzüglich ein Fall exklusiv von ORF. Die Figur Michael Fichtl wirkte überdies in den Filmen mit den Oberinspektoren Hirth, Pfeifer, Kant und Varanasi mit.
+|-
+| 1995 || data-sort-value="Felber" | Leo Felber || {{PersonZelle|Heinz|Schubert|Heinz Schubert (Schauspieler)}} ||  || [[Frankfurt am Main]] || [[Tatort: Eine mörderische Rolle|1]] || [[Hessischer Rundfunk|HR]] ||
+|-
+| 1991–1995 || data-sort-value="Markowitz" | Franz Markowitz || {{PersonZelle|Günter|Lamprecht}} || [[Datei:Günter Lamprecht.jpg|100px|zentriert|Günter Lamprecht]] || [[Berlin]] || 8 || [[Sender Freies Berlin|SFB]] ||
+|-
+| 1991–1992 || data-sort-value="Carlucci" | [[Reto Carlucci]] || {{PersonZelle|Andrea|Zogg}} ||  || [[Bern]] || 2 || [[SF DRS]] || Die Figur Reto Carlucci gehörte zuvor schon zum Team von Walter Howald.
+|-
+| 1981–1991 || data-sort-value="Schimanski" | [[Horst Schimanski|Horst Schimanski,<br />Christian Thanner]] || {{PersonZelle|Götz|George}},<br />[[Eberhard Feik]] || <span style="white-space:nowrap;display:flex;align-items:center;">[[Datei:HorstSchimanski.jpg|100px|zentriert|Götz George]] [[Datei:Eberhard Feik.jpg|100px|zentriert|Eberhard Feik]]</span> || [[Duisburg]] || 29 || [[Westdeutscher Rundfunk Köln|WDR]],
+([[Deutscher Fernsehfunk|DFF]])
+| Ab 1997 war die Figur Schimanski Protagonist der eigenständigen Filmreihe ''[[Horst Schimanski#Filmreihe „Schimanski“|Schimanski]]''.
+|-
+| 1990 || data-sort-value="Howald" | Walter Howald || {{PersonZelle|Mathias|Gnädinger}} ||  || [[Bern]] || [[Tatort: Howalds Fall|1]] || [[SF DRS]] ||
+|-
+| 1988–1989 || data-sort-value="Brandenburg" | [[Otto Brandenburg (Tatort-Figur)|Otto Brandenburg]] || {{PersonZelle|Horst|Bollmann}} || [[Datei:Horst Bollmann.jpg|100px|zentriert|Horst Bollmann]] || [[München]] || 2 || [[Bayerischer Rundfunk|BR]] ||
+|-
+| 1985–1989 || data-sort-value="Bülow" | [[Hans Georg Bülow]] || {{PersonZelle|Heinz|Drache|Heinz Drache (Schauspieler)}} || [[Datei:Heinz DracheIII.jpg|100px|zentriert|Heinz Drache]] || [[Berlin]] || 6 || [[Sender Freies Berlin|SFB]] ||
+|-
+| 1987–1988 || data-sort-value="Schreitle" | [[Georg-Thomas Schreitle]] || {{PersonZelle|Horst Michael|Neutze}} ||  || [[Stuttgart]] || 3 || [[Süddeutscher Rundfunk|SDR]] ||
+|-
+| 1986–1988 || data-sort-value="Pfeifer" | [[Pfeifer (Tatort-Figur)|Pfeifer]],<br />Harald Passini (1 Film) || {{PersonZelle|Bruno|Dallansky}},<br />[[Christoph Waltz]] (1987) || [[Datei:Christoph Waltz Viennale 2017 f (cropped).jpg|100px|zentriert|Christoph Waltz]] || [[Wien]] || 3 || [[Österreichischer Rundfunk|ORF]] || zuzüglich fünf Fälle exklusiv vom ORF
+|-
+| 1981–1988 || data-sort-value="Wiegand" | [[Hanne Wiegand]] || {{PersonZelle|Karin|Anselm}} ||  || [[Baden-Baden]] || 8 || [[Südwestfunk|SWF]] ||
+|-
+| 1987 || data-sort-value="Scherrer" | Karl Scherrer || {{PersonZelle|Hans|Brenner}} ||  || [[München]] || [[Tatort: Pension Tosca oder Die Sterne lügen nicht|1]] || [[Bayerischer Rundfunk|BR]] ||
+|-
+| 1981–1987 || data-sort-value="Lenz" | [[Ludwig Lenz (Tatort-Figur)|Ludwig Lenz]] || {{PersonZelle|Helmut|Fischer}} || [[Datei:Helmut Fischer Schauspieler.jpg|100px|zentriert|Helmut Fischer]] || [[München]] || 7 || [[Bayerischer Rundfunk|BR]] || Die Figur Lenz trat vorher schon in den Filmen mit Kommissar Veigl in Erscheinung.
+|-
+| 1971–1983 || data-sort-value="Marek" | [[Oberinspektor Marek (Fernsehserie)|Viktor Marek]] || {{PersonZelle|Fritz|Eckhardt}} || [[Datei:USIS - Fritz Eckhardt crop 2.jpg|100px|zentriert|Fritz Eckhardt]] || [[Wien]] || 13 || [[Österreichischer Rundfunk|ORF]] || Die Figur Marek ging aus der Fernsehserie ''[[Oberinspektor Marek (Fernsehserie)|Oberinspektor Marek]]'' hervor.
+|-
+| 1986 || data-sort-value="Riedmüller" | Sigi Riedmüller || {{PersonZelle|Günther Maria|Halmer}} || [[Datei:MJK 60768 Claudia und Guenther Maria Halmer (Hessischer Film- und Kinopreis 2019) (cropped) - Günther Maria Halmer.jpg|100px|zentriert|Günther Maria Halmer]] || [[München]] || [[Tatort: Riedmüller, Vorname Sigi|1]] || [[Bayerischer Rundfunk|BR]] ||
+|-
+| 1986 || data-sort-value="Lutinsky" | Alexander Lutinsky || {{PersonZelle|Miguel|Herz-Kestranek}} || [[Datei:Miguel Herz-Kestranek ROMY2008.jpg|100px|zentriert|Miguel Herz-Kestranek]] || [[Wien]] || 0 || [[Österreichischer Rundfunk|ORF]] || [[Tatort: Der Schnee vom vergangenen Jahr|ein Fall]] exklusiv von ORF
+|-
+| 1984–1986 || data-sort-value="Hirth" | [[Hirth (Tatort-Figur)|Hirth]] || {{PersonZelle|Kurt|Jaggberg}} ||  || [[Wien]] || 3 || [[Österreichischer Rundfunk|ORF]] || zuzüglich sechs Fälle exklusiv vom ORF
+|-
+| 1971–1986 || data-sort-value="Lutz" | [[Eugen Lutz (Tatort-Figur)|Eugen Lutz]] || {{PersonZelle|Werner|Schumacher|Werner Schumacher (Schauspieler)}} ||  || [[Baden-Württemberg]] || 16 || [[Süddeutscher Rundfunk|SDR]] ||
+|-
+| 1985 || data-sort-value="Dietze" | Reinhold Dietze || {{PersonZelle|Klaus|Löwitsch}} || [[Datei:Klaus Löwitsch.jpg|100px|zentriert|Klaus Löwitsch]] || [[Frankfurt am Main]] || [[Tatort: Acht, neun – aus|1]] || [[Hessischer Rundfunk|HR]] ||
+|-
+| 1981–1985 || data-sort-value="Walther" | [[Friedrich Walther (Tatort-Figur)|Friedrich Walther]] || {{PersonZelle|Volker|Brandt}} || [[Datei:Volker brandt 2008.jpg|100px|zentriert|Volker Brandt]] || [[Berlin]] || 6 || [[Sender Freies Berlin|SFB]] ||
+|-
+| 1979–1985 || [[Delius (Tatort-Figur)|Delius]] || {{PersonZelle|Horst|Bollmann}} || [[Datei:Horst Bollmann.jpg|100px|zentriert|Horst Bollmann]] || [[Bonn]] || 3 || [[Norddeutscher Rundfunk|NDR]] ||
+|-
+| 1984 || Rullmann || {{PersonZelle|Hans-Werner|Bussinger}} ||  || [[Heppenheim an der Bergstraße|Heppenheim]] || [[Tatort: Rubecks Traum|1]] || [[Hessischer Rundfunk|HR]] ||
+|-
+| 1970–1984 || data-sort-value="Schäfermann" | [[Horst Schäfermann|Horst Schäfermann,<br />Peter Liersdahl (bis Film 2)]] || {{PersonZelle|Manfred|Heidmann}},<br />[[Dieter Eppler]] (bis 1973) ||  || [[Saarbrücken]] || 6 || [[Saarländischer Rundfunk|SR]] ||
+|-
+| 1983 || Ronke || {{PersonZelle|Ulrich|von Bock}} ||  || [[Hamburg]] || [[Tatort: Wenn alle Brünnlein fließen|1]] || [[Norddeutscher Rundfunk|NDR]] ||
+|-
+| 1978–1983 || data-sort-value="Bergmann" | [[Bergmann (Tatort)|Bergmann]] || {{PersonZelle|Heinz|Treuke}} (1978),<br />[[Lutz Moik]] (ab 1981) ||  || [[Frankfurt am Main]] || 3 || [[Hessischer Rundfunk|HR]] ||
+|-
+| 1982 || data-sort-value="Rolfs" | Werner Rolfs || {{PersonZelle|Klaus|Löwitsch}} || [[Datei:Klaus Löwitsch.jpg|100px|zentriert|Klaus Löwitsch]] || [[Frankfurt am Main]] || [[Tatort: So ein Tag …|1]] || [[Hessischer Rundfunk|HR]] ||
+|-
+| 1982 || data-sort-value="Schnoor" | Nikolaus Schnoor || {{PersonZelle|Uwe|Dallmeier}} ||  || [[Bremerhaven]] || [[Tatort: Wat Recht is, mutt Recht bliewen|1]] || [[Norddeutscher Rundfunk|NDR]] ||
+|-
+| 1980–1982 || data-sort-value="Piper" | [[Jochen Piper]] || {{PersonZelle|Bernd|Seebacher}} ||  || [[Bremen]] || 2 || [[Norddeutscher Rundfunk|NDR]] ||
+|-
+| 1970–1982 || data-sort-value="Trimmel" | [[Paul Trimmel]] || {{PersonZelle|Walter|Richter}} || [[Datei:Fotothek df pk 0000022 010 Szenenbilder mit Ruth Schilling, Max Eckard und Walter Richter.jpg|100px|zentriert|Walter Richter]] || [[Hamburg]] || 11 || [[Norddeutscher Rundfunk|NDR]] ||
+|-
+| 1981 || data-sort-value="Greve" | Horst Greve || {{PersonZelle|Erik|Schumann}} || [[Datei:Erik Schuman Nacht fiel über.jpg|100px|zentriert|Erik Schuman]] || [[Lübeck]] || [[Tatort: Das Zittern der Tenöre|1]] || [[Norddeutscher Rundfunk|NDR]] ||
+|-
+| 1981 || Beck || {{PersonZelle|Hans|Häckermann}} ||  || [[Lübeck]] || [[Tatort: Slalom|1]] || [[Norddeutscher Rundfunk|NDR]] ||
+|-
+| 1972–1981 || data-sort-value="Veigl" | Melchior Veigl || {{PersonZelle|Gustl|Bayrhammer}} ||  [[Datei:Helden (George Bernard Shaw) - LABW - Generallandesarchiv Karlsruhe 57-3 Nr. 5673.jpg|100px|zentriert|Gustl Bayrhammer]]|| [[München]] || 15 || [[Bayerischer Rundfunk|BR]] ||
+|-
+| 1980 || Sander || {{PersonZelle|Volkert|Kraeft}} ||  || [[Frankfurt am Main]] || [[Tatort: Mit nackten Füßen|1]] || [[Hessischer Rundfunk|HR]] ||
+|-
+| 1980 || data-sort-value="Enders" | Paul Enders || {{PersonZelle|Jörg|Hube}} || [[Datei:Jörg Hube 1.JPG|100px|zentriert|Jörg Hube]] || [[Essen]], [[Frankfurt am Main|Frankfurt]] || [[Tatort: Der Zeuge|1]] || [[Westdeutscher Rundfunk Köln|WDR]] ||
+|-
+| 1980 || data-sort-value="Kreutzer" | Willi Kreutzer || {{PersonZelle|Willy|Semmelrogge}} ||  || [[Essen]] || [[Tatort: Herzjagd|1]] || [[Westdeutscher Rundfunk Köln|WDR]] || Die Figur Willi Kreutzer gehörte davor schon zum Team von Kommissar Haferkamp.
+|-
+| 1978–1980 || data-sort-value="Buchmüller" | [[Marianne Buchmüller]] || {{PersonZelle|Nicole|Heesters}} || [[Datei:Nestroy 2014 11 Nicole Heesters.jpg|100px|zentriert|Nicole Heesters]] || [[Mainz]] || 3 || [[Südwestfunk|SWF]] ||
+|-
+| 1974–1980 || data-sort-value="Haferkamp" | [[Kommissar Haferkamp|Heinz Haferkamp]] || {{PersonZelle|Hansjörg|Felmy}} || [[Datei:Und ewig singen die Wälder (filmposter)-Felmy Ausschnitt.jpg|100px|zentriert|Hansjörg Felmy]] || [[Essen]] || 20 || [[Westdeutscher Rundfunk Köln|WDR]] ||
+|-
+| 1979 || Nagel || {{PersonZelle|Diether|Krebs}} ||  || [[Braunschweig]] || [[Tatort: Alles umsonst|1]] || [[Norddeutscher Rundfunk|NDR]] ||
+|-
+| 1978–1979 || data-sort-value="Behnke" | [[Matthias Behnke]] || {{PersonZelle|Hans-Peter|Korff}} || [[Datei:Hans-Peter Korff..jpg|100px|zentriert|Hans-Peter Korff]] || [[Berlin]] || 2 || [[Sender Freies Berlin|SFB]] ||
+|-
+| 1971–1979 || data-sort-value="Konrad" | [[Kommissar Konrad|Konrad]] || {{PersonZelle|Klaus|Höhne}} ||  || [[Frankfurt am Main]] || 8 || [[Hessischer Rundfunk|HR]] ||
+|-
+| 1971–1978 || data-sort-value="Finke" | [[Kommissar Finke|Finke]] || {{PersonZelle|Klaus|Schwarzkopf}} ||  || [[Kiel]] || 7 || [[Norddeutscher Rundfunk|NDR]] ||
+|-
+| 1975–1977 || data-sort-value="Schmidt" | [[Martin Schmidt (Tatort-Figur)|Martin Schmidt]] || {{PersonZelle|Martin|Hirthe}} ||  || [[Berlin]] || 3 || [[Sender Freies Berlin|SFB]] ||
+|-
+| 1974–1977 || data-sort-value="Brammer" | [[Heinz Brammer]] || {{PersonZelle|Knut|Hinz}} ||  || [[Hannover]] || 4 || [[Norddeutscher Rundfunk|NDR]] ||
+|-
+| 1973–1977 || data-sort-value="Gerber" | [[Franz Gerber (Tatort-Figur)|Franz Gerber]] || {{PersonZelle|Heinz|Schimmelpfennig|Heinz Schimmelpfennig (Schauspieler)}} ||  || [[Baden-Baden]] || 5 || [[Südwestfunk|SWF]] ||
+|-
+| 1973 || data-sort-value="Böck" | Walter Böck || {{PersonZelle|Hans|Häckermann}} ||  || [[Bremen]] || [[Tatort: Ein ganz gewöhnlicher Mord|1]] || [[Radio Bremen]] ||
+|-
+| 1971–1973 || data-sort-value="Kressin" | [[Zolloberinspektor Kressin|Kressin]] || {{PersonZelle|Sieghardt|Rupp}} ||  || [[Köln]] || 7 || [[Westdeutscher Rundfunk|WDR]] ||
+|-
+| 1972 || data-sort-value="Pflüger" | Horst Pflüger || {{PersonZelle|Ernst|Jacobi}} || [[Datei:Ernst Jacobi Deutsches Filminstitut & Filmmuseum.jpg|100px|zentriert|Ernst Jacobi]] || [[Baden-Baden]] || [[Tatort: Wenn Steine sprechen|1]] || [[Südwestfunk|SWF]] ||
+|-
+| 1971–1972 || data-sort-value="Kasulke" | [[Erwin Kasulke]] || {{PersonZelle|Paul|Esser}} ||  || [[Berlin]] || 2 || [[Sender Freies Berlin|SFB]] || </noinclude>
+|}
+</onlyinclude>
+
+== Siehe auch ==
+* [[Liste der Tatort-Folgen]]
+* [[Liste der Tatort-Regisseure]]
+* [[Liste der Tatort-Autoren]]
+
+== Weblinks ==
+{{Commonscat|Tatort investigators|Tatort-Ermittler|audio=1|video=0}}
+* [https://www.daserste.de/unterhaltung/krimi/tatort/kommissare/tatort-filter-aktuelle-kommissare-100.html Übersicht über aktuelle Ermittler] bei [[DasErste.de]]
+* [https://www.daserste.de/unterhaltung/krimi/tatort/kommissare/kommissare-ausser-dienst-100.html Übersicht über ehemalige Ermittler] bei [[DasErste.de]]
+
+== Einzelnachweise ==
+<references />
+
+{{NaviBlock
+|Navigationsleiste Tatort-Ermittler
+|Navigationsleiste ehemalige Tatort-Ermittler
+}}
+
+[[Kategorie:Ermittler der Fernsehreihe „Tatort“|!]]
+[[Kategorie:Liste (fiktive Figuren)|Tatortermittler]]

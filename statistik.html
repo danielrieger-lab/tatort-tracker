@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Tatort Tracker" />
+    <title>Statistik</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="assets/icons/icon-192.png" />
+    <link rel="icon" type="image/svg+xml" href="assets/icons/icon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app statistik-page">
+      <header class="app-header">
+        <h1>Statistik</h1>
+      </header>
+
+      <section class="card statistik-frame" aria-labelledby="statistik-title">
+        <div class="stat-grid" aria-label="Statistik-Kacheln">
+          <div class="stat-tile">Beste Folgen</div>
+          <div class="stat-tile">Schlechteste Folgen</div>
+          <div class="stat-tile">Beste Teams</div>
+          <div class="stat-tile">Schlechteste Teams</div>
+          <div class="stat-tile">Beste Städte</div>
+          <div class="stat-tile">schlechteste Städe.</div>
+          <div class="stat-tile">Gruseligste Folgen</div>
+          <div class="stat-tile stat-tile-average" aria-live="polite">
+            <span class="stat-average-symbol">Ø</span>
+            <span class="stat-average-value" id="stat-average-value">--/5</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="stat-modal hidden" id="stat-modal" aria-hidden="true">
+      <div class="stat-modal-backdrop" data-close-stat-modal></div>
+      <section class="stat-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="stat-modal-title">
+        <div class="stat-modal-header">
+          <h2 id="stat-modal-title">Beste Folgen</h2>
+          <button class="stat-modal-close" type="button" data-close-stat-modal aria-label="Schließen">×</button>
+        </div>
+        <p class="stat-modal-hint">Tippe auf eine Folge, um sie auf der Episoden-Seite zu öffnen.</p>
+        <div id="stat-modal-status" class="stat-modal-status">Lade Bewertungen …</div>
+        <ul id="stat-modal-list" class="stat-modal-list" aria-label="Liste der besten Folgen"></ul>
+      </section>
+    </div>
+
+    <footer class="bottom-bar" aria-label="Navigation">
+      <div class="bottom-bar-inner">
+        <a class="bottom-btn" href="index.html">
+          <img src="assets/icons/episode.svg" alt="" aria-hidden="true" />
+          <span>Episoden</span>
+        </a>
+        <a class="bottom-btn active" href="statistik.html" aria-current="page">
+          <img src="assets/icons/statistik.svg" alt="" aria-hidden="true" />
+          <span>Statistik</span>
+        </a>
+      </div>
+    </footer>
+
+    <script src="statistik.js" defer></script>
+  </body>
+</html>
