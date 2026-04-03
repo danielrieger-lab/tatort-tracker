@@ -5,6 +5,7 @@ const EPISODES_SOURCE = "data/tatort-episodes.json";
 
 const modal = document.getElementById("stat-modal");
 const status = document.getElementById("stat-modal-status");
+const podium = document.getElementById("stat-podium");
 const list = document.getElementById("stat-modal-list");
 const hint = document.querySelector(".stat-modal-hint");
 const statTiles = document.querySelectorAll(".stat-tile");
@@ -255,6 +256,10 @@ function closeModal() {
 
 function renderList() {
   list.innerHTML = "";
+  if (podium) {
+    podium.innerHTML = "";
+    podium.classList.add("hidden");
+  }
 
   let ranked;
 
@@ -327,8 +332,37 @@ function renderList() {
 
   status.textContent = "";
 
-  ranked.forEach((item, index) => {
-    const position = `${index + 1}.`;
+  let listItems = ranked;
+
+  if (currentMode === "best" && podium) {
+    const podiumItems = ranked.slice(0, 3);
+    listItems = ranked.slice(3);
+
+    if (podiumItems.length > 0) {
+      podium.classList.remove("hidden");
+
+      podiumItems.forEach((item, index) => {
+        const position = `${index + 1}.`;
+        const entry = document.createElement("button");
+        entry.type = "button";
+        entry.className = "stat-podium-entry";
+        entry.innerHTML = `
+          <span class="entry-left"><span class="entry-no">${position}</span><span class="entry-title">${escapeHtml(item.episode.title)}</span></span>
+          <span class="entry-score">${formatScore(item.score)}</span>
+        `;
+
+        entry.addEventListener("click", () => {
+          window.location.href = `index.html?episode=${encodeURIComponent(item.episode.no)}`;
+        });
+
+        podium.appendChild(entry);
+      });
+    }
+  }
+
+  listItems.forEach((item, index) => {
+    const positionNumber = currentMode === "best" ? index + 4 : index + 1;
+    const position = `${positionNumber}.`;
     let entry;
     if (currentMode === "teams" || currentMode === "worstTeams") {
       entry = document.createElement("div");
