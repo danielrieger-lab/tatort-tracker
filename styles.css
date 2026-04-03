@@ -155,15 +155,18 @@ button {
 
 .rating-row {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
   flex-wrap: wrap;
 }
 
 .top-fields {
+  display: flex;
+  flex-direction: row;
   flex-wrap: nowrap;
   align-items: flex-end;
+  gap: 8px;
 }
 
 .top-field {
@@ -205,13 +208,14 @@ button {
 }
 
 .general-rating {
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
 }
 
 .general-rating .rating-label {
-  margin-right: 6px;
+  margin-right: 0;
 }
 
 .general-rating .rating-value {
@@ -220,8 +224,9 @@ button {
 
 .general-rating .stars {
   margin-left: 0;
-  flex-basis: 100%;
+  flex-basis: auto;
   min-height: 20px;
+  width: 100%;
 }
 
 .general-rating .star {
@@ -237,8 +242,10 @@ button {
 }
 
 .character-row {
-  align-items: center;
-  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
   margin-top: 8px;
 }
 
@@ -582,23 +589,6 @@ div.stat-modal-entry {
     gap: 8px;
   }
 
-  .general-rating .rating-label,
-  .general-rating .rating-value {
-    display: inline;
-  }
-
-  .general-rating .stars {
-    flex-basis: auto;
-    width: 100%;
-    margin-top: 4px;
-  }
-
-  .rating-row:not(.general-rating):not(.top-fields):not(.character-row) {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 6px;
-  }
-
   .top-fields {
     gap: 8px;
   }
@@ -610,10 +600,6 @@ div.stat-modal-entry {
   .top-fields .anzahl-field {
     min-width: 108px;
     max-width: 128px;
-  }
-
-  .character-row {
-    gap: 8px;
   }
 
   .character-row .rating-label {
