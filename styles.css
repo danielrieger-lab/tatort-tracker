@@ -683,9 +683,47 @@ div.stat-modal-entry {
   }
 
   .stat-modal-dialog {
-    width: calc(100% - 16px);
-    margin-top: 5vh;
+    width: calc(100% - 12px);
+    margin-top: 3vh;
+    max-height: calc(100vh - 24px);
     padding: 14px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .stat-podium {
+    margin-top: 12px;
+  }
+
+  .stat-podium-columns {
+    gap: 6px;
+  }
+
+  .stat-podium-card {
+    min-height: 90px;
+    padding: 8px;
+    gap: 4px;
+  }
+
+  .stat-podium-card.place-1 {
+    min-height: 108px;
+  }
+
+  .stat-podium-card.place-2,
+  .stat-podium-card.place-3 {
+    min-height: 88px;
+  }
+
+  .podium-title {
+    font-size: 0.78rem;
+  }
+
+  .podium-score {
+    font-size: 0.76rem;
+  }
+
+  .stat-modal-list {
+    margin-top: 12px;
   }
 
   .stat-podium-block {
