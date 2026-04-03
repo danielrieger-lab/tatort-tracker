@@ -162,12 +162,13 @@ button {
 }
 
 .top-fields {
+  flex-wrap: nowrap;
   align-items: flex-end;
 }
 
 .top-field {
   flex: 1;
-  min-width: 220px;
+  min-width: 0;
   display: grid;
   gap: 6px;
 }
@@ -206,7 +207,7 @@ button {
 .general-rating {
   justify-content: flex-start;
   align-items: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .general-rating .rating-label {
@@ -218,7 +219,8 @@ button {
 }
 
 .general-rating .stars {
-  margin-left: auto;
+  margin-left: 0;
+  flex-basis: 100%;
   min-height: 20px;
 }
 
@@ -235,13 +237,21 @@ button {
 }
 
 .character-row {
-  align-items: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
   margin-top: 8px;
 }
 
+.character-row .rating-label {
+  white-space: nowrap;
+  flex: 0 0 auto;
+}
+
 .character-controls {
-  width: 100%;
-  max-width: 420px;
+  width: auto;
+  max-width: none;
+  min-width: 0;
+  flex: 1 1 auto;
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 8px;
@@ -570,6 +580,27 @@ div.stat-modal-entry {
     flex-direction: column;
     align-items: flex-start;
     gap: 6px;
+  }
+
+  .top-fields {
+    gap: 8px;
+  }
+
+  .top-fields .top-field {
+    min-width: 0;
+  }
+
+  .top-fields .anzahl-field {
+    min-width: 108px;
+    max-width: 128px;
+  }
+
+  .character-row {
+    gap: 8px;
+  }
+
+  .character-row .rating-label {
+    font-size: 0.9rem;
   }
 
   .rating-row:not(.general-rating):not(.top-fields):not(.character-row) .stars {
