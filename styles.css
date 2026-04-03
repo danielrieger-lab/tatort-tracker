@@ -576,6 +576,23 @@ div.stat-modal-entry {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .general-rating {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .general-rating .rating-label,
+  .general-rating .rating-value {
+    display: inline;
+  }
+
+  .general-rating .stars {
+    flex-basis: auto;
+    width: 100%;
+    margin-top: 4px;
+  }
+
   .rating-row:not(.general-rating):not(.top-fields):not(.character-row) {
     flex-direction: column;
     align-items: flex-start;
