@@ -525,44 +525,64 @@ button {
   opacity: 0.9;
 }
 
-.stat-podium.hidden {
-  display: none;
-}
-
-.stat-podium {
-  margin: 14px 0 0;
-  display: grid;
-  gap: 10px;
-}
-
-.stat-podium-heading-row {
-  list-style: none;
-  margin: 2px 0 0;
-  padding: 0;
-}
-
 .stat-podium-heading {
+  margin: 0;
   font-family: "Futura Black", "Futura", "Trebuchet MS", sans-serif;
   opacity: 0.95;
 }
 
-.stat-podium-entry {
-  background: rgba(255, 255, 255, 0.12);
+.stat-podium-block {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
 }
 
-.stat-podium-entry {
-  width: 100%;
+.stat-podium-columns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  align-items: end;
+}
+
+.stat-podium-card {
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.1);
   color: var(--text);
-  padding: 12px 14px;
-  text-align: left;
+  padding: 10px;
+  text-align: center;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
+  display: grid;
+  gap: 6px;
+  align-content: end;
+  min-height: 112px;
+}
+
+.stat-podium-card.place-1 {
+  min-height: 132px;
+}
+
+.stat-podium-card.place-2,
+.stat-podium-card.place-3 {
+  min-height: 104px;
+}
+
+.podium-place {
+  font-family: "Futura Black", "Futura", "Trebuchet MS", sans-serif;
+}
+
+.podium-title {
+  font-family: "Futura Black", "Futura", "Trebuchet MS", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+.podium-score {
+  opacity: 0.85;
+  font-family: "Futura", "Trebuchet MS", sans-serif;
 }
 
 .stat-modal-list {

@@ -334,27 +334,42 @@ function renderList() {
     listItems = ranked.slice(3);
 
     if (podiumItems.length > 0) {
-      const headingRow = document.createElement("li");
-      headingRow.className = "stat-podium-heading-row";
-      headingRow.innerHTML = `<span class="stat-podium-heading">Gewinnerpodest</span>`;
-      list.appendChild(headingRow);
+      const podiumBlock = document.createElement("li");
+      podiumBlock.className = "stat-podium-block";
 
-      podiumItems.forEach((item, index) => {
-        const position = `${index + 1}.`;
+      const heading = document.createElement("div");
+      heading.className = "stat-podium-heading";
+      heading.textContent = "Gewinnerpodest";
+
+      const podiumColumns = document.createElement("div");
+      podiumColumns.className = "stat-podium-columns";
+
+      const order = [1, 0, 2];
+      order.forEach((itemIndex) => {
+        const item = podiumItems[itemIndex];
+        if (!item) {
+          return;
+        }
+
+        const place = itemIndex + 1;
         const entry = document.createElement("button");
         entry.type = "button";
-        entry.className = "stat-modal-entry stat-podium-entry";
+        entry.className = `stat-podium-card place-${place}`;
         entry.innerHTML = `
-          <span class="entry-left"><span class="entry-no">${position}</span><span class="entry-title">${escapeHtml(item.episode.title)}</span></span>
-          <span class="entry-score">${formatScore(item.score)}</span>
+          <span class="podium-place">${place}.</span>
+          <span class="podium-title">${escapeHtml(item.episode.title)}</span>
+          <span class="podium-score">${formatScore(item.score)}</span>
         `;
 
         entry.addEventListener("click", () => {
           window.location.href = `index.html?episode=${encodeURIComponent(item.episode.no)}`;
         });
 
-        list.appendChild(entry);
+        podiumColumns.appendChild(entry);
       });
+
+      podiumBlock.append(heading, podiumColumns);
+      list.appendChild(podiumBlock);
     }
   }
 
