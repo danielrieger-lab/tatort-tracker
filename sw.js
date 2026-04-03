@@ -1,4 +1,4 @@
-const CACHE_NAME = "tatort-tracker-v13";
+const CACHE_NAME = "tatort-tracker-v14";
 const APP_ASSETS = [
   "./",
   "./index.html",
@@ -11,6 +11,7 @@ const APP_ASSETS = [
   "./data/tatort-episode-roles-failed.txt",
   "./assets/icons/episode.svg",
   "./assets/icons/icon.svg",
+  "./assets/icons/logo.jpeg",
   "./assets/icons/icon-192.png",
   "./assets/icons/icon-512.png",
   "./assets/icons/icon-maskable-512.png"
