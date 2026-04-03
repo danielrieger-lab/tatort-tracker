@@ -535,22 +535,19 @@ button {
   gap: 10px;
 }
 
-.stat-podium-inline {
+.stat-podium-heading-row {
   list-style: none;
-  margin: 0;
+  margin: 2px 0 0;
   padding: 0;
-  display: grid;
-  gap: 10px;
-}
-
-.stat-podium-grid {
-  display: grid;
-  gap: 10px;
 }
 
 .stat-podium-heading {
   font-family: "Futura Black", "Futura", "Trebuchet MS", sans-serif;
   opacity: 0.95;
+}
+
+.stat-podium-entry {
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .stat-podium-entry {

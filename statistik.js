@@ -334,22 +334,16 @@ function renderList() {
     listItems = ranked.slice(3);
 
     if (podiumItems.length > 0) {
-      const podiumWrapper = document.createElement("li");
-      podiumWrapper.className = "stat-podium-inline";
-
-      const heading = document.createElement("div");
-      heading.className = "stat-podium-heading";
-      heading.textContent = "Gewinnerpodest";
-      podiumWrapper.appendChild(heading);
-
-      const podiumGrid = document.createElement("div");
-      podiumGrid.className = "stat-podium-grid";
+      const headingRow = document.createElement("li");
+      headingRow.className = "stat-podium-heading-row";
+      headingRow.innerHTML = `<span class="stat-podium-heading">Gewinnerpodest</span>`;
+      list.appendChild(headingRow);
 
       podiumItems.forEach((item, index) => {
         const position = `${index + 1}.`;
         const entry = document.createElement("button");
         entry.type = "button";
-        entry.className = "stat-podium-entry";
+        entry.className = "stat-modal-entry stat-podium-entry";
         entry.innerHTML = `
           <span class="entry-left"><span class="entry-no">${position}</span><span class="entry-title">${escapeHtml(item.episode.title)}</span></span>
           <span class="entry-score">${formatScore(item.score)}</span>
@@ -359,11 +353,8 @@ function renderList() {
           window.location.href = `index.html?episode=${encodeURIComponent(item.episode.no)}`;
         });
 
-        podiumGrid.appendChild(entry);
+        list.appendChild(entry);
       });
-
-      podiumWrapper.appendChild(podiumGrid);
-      list.appendChild(podiumWrapper);
     }
   }
 
