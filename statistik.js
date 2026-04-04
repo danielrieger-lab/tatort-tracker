@@ -8,8 +8,6 @@ const status = document.getElementById("stat-modal-status");
 const list = document.getElementById("stat-modal-list");
 const podium = document.getElementById("stat-podium");
 const hint = document.querySelector(".stat-modal-hint");
-const bestPodium = document.getElementById("best-podium");
-const bestPodiumGrid = document.getElementById("best-podium-grid");
 const statTiles = document.querySelectorAll(".stat-tile");
 const statAverageValue = document.getElementById("stat-average-value");
 
@@ -228,55 +226,6 @@ function formatScore(value) {
   return `${value.toFixed(1)}/5`;
 }
 
-function renderBestPodium() {
-  if (!bestPodiumGrid) {
-    return;
-  }
-
-  bestPodiumGrid.innerHTML = "";
-
-  const podiumItems = episodes
-    .map((episode) => ({ episode, score: getAverageRating(episode.no) }))
-    .filter((item) => item.score > 0)
-    .sort((a, b) => (b.score - a.score) || (a.episode.no - b.episode.no))
-    .slice(0, 3);
-
-  if (!bestPodium) {
-    return;
-  }
-
-  if (podiumItems.length === 0) {
-    bestPodium.classList.add("hidden");
-    return;
-  }
-
-  bestPodium.classList.remove("hidden");
-
-  const order = [1, 0, 2];
-  order.forEach((itemIndex) => {
-    const item = podiumItems[itemIndex];
-    if (!item) {
-      return;
-    }
-
-    const place = itemIndex + 1;
-    const card = document.createElement("button");
-    card.type = "button";
-    card.className = `best-podium-card place-${place}`;
-    card.innerHTML = `
-      <span class="best-podium-place">${place}.</span>
-      <span class="best-podium-episode">${escapeHtml(item.episode.title)}</span>
-      <span class="best-podium-score">${formatScore(item.score)}</span>
-    `;
-
-    card.addEventListener("click", () => {
-      window.location.href = `index.html?episode=${encodeURIComponent(item.episode.no)}`;
-    });
-
-    bestPodiumGrid.appendChild(card);
-  });
-}
-
 function updateOverallGeneralMeanTile() {
   if (!statAverageValue) {
     return;
@@ -489,12 +438,10 @@ async function loadEpisodes() {
     const data = await response.json();
     episodes = Array.isArray(data) ? data : [];
     updateOverallGeneralMeanTile();
-    renderBestPodium();
     renderList();
   } catch {
     status.textContent = "Die Statistik konnte nicht geladen werden.";
     updateOverallGeneralMeanTile();
-    renderBestPodium();
   }
 }
 
