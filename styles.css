@@ -620,7 +620,6 @@ button {
   cursor: pointer;
 }
 
-.stat-modal-hint,
 .stat-modal-status {
   margin: 10px 0 0;
   opacity: 0.9;

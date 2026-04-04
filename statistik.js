@@ -6,7 +6,6 @@ const EPISODES_SOURCE = "data/tatort-episodes.json";
 const modal = document.getElementById("stat-modal");
 const status = document.getElementById("stat-modal-status");
 const list = document.getElementById("stat-modal-list");
-const hint = document.querySelector(".stat-modal-hint");
 const statTiles = document.querySelectorAll(".stat-tile");
 const statAverageValue = document.getElementById("stat-average-value");
 
@@ -402,39 +401,18 @@ function openList(mode) {
   const title = document.getElementById("stat-modal-title");
   if (mode === "worst") {
     title.textContent = "Schlechteste Folgen";
-    if (hint) {
-      hint.textContent = "Tippe auf eine Folge, um sie auf der Episoden-Seite zu öffnen.";
-    }
   } else if (mode === "worstTeams") {
     title.textContent = "Schlechteste Teams";
-    if (hint) {
-      hint.textContent = "Ermittler-Ranking nach Team- und Gesamtbewertung.";
-    }
   } else if (mode === "cities") {
     title.textContent = "Beste Städte";
-    if (hint) {
-      hint.textContent = "Städte-Ranking nach mittlerer Gesamtbewertung aller bewerteten Folgen.";
-    }
   } else if (mode === "worstCities") {
     title.textContent = "Schlechteste Städte";
-    if (hint) {
-      hint.textContent = "Städte-Ranking nach mittlerer Gesamtbewertung aller bewerteten Folgen.";
-    }
   } else if (mode === "teams") {
     title.textContent = "Beste Teams";
-    if (hint) {
-      hint.textContent = "Ermittler-Ranking nach Team- und Gesamtbewertung.";
-    }
   } else if (mode === "scary") {
     title.textContent = "Gruseligste Folgen";
-    if (hint) {
-      hint.textContent = "Top 5 nach Gruselranking.";
-    }
   } else {
     title.textContent = "Beste Folgen";
-    if (hint) {
-      hint.textContent = "";
-    }
   }
   openModal();
 
