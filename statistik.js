@@ -6,6 +6,7 @@ const EPISODES_SOURCE = "data/tatort-episodes.json";
 const modal = document.getElementById("stat-modal");
 const status = document.getElementById("stat-modal-status");
 const list = document.getElementById("stat-modal-list");
+const podium = document.getElementById("stat-podium");
 const hint = document.querySelector(".stat-modal-hint");
 const bestPodium = document.getElementById("best-podium");
 const bestPodiumGrid = document.getElementById("best-podium-grid");
@@ -308,6 +309,7 @@ function renderList() {
   list.innerHTML = "";
   if (podium) {
     podium.innerHTML = "";
+    podium.classList.add("hidden");
   }
 
   let ranked;
@@ -388,6 +390,7 @@ function renderList() {
     listItems = ranked.slice(3);
 
     if (podiumItems.length > 0) {
+      podium.classList.remove("hidden");
       const heading = document.createElement("div");
       heading.className = "stat-podium-heading";
       heading.textContent = "Gewinnerpodest";
