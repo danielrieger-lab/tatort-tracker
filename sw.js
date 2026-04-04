@@ -1,4 +1,4 @@
-const CACHE_NAME = "tatort-tracker-v34";
+const CACHE_NAME = "tatort-tracker-v35";
 const APP_ASSETS = [
   "./",
   "./index.html",
@@ -14,7 +14,10 @@ const APP_ASSETS = [
   "./assets/icons/logo.jpeg",
   "./assets/icons/icon-192.png",
   "./assets/icons/icon-512.png",
-  "./assets/icons/icon-maskable-512.png"
+  "./assets/icons/icon-maskable-512.png",
+  "./assets/icons/app-icon-192.png",
+  "./assets/icons/app-icon-512.png",
+  "./assets/icons/app-maskable-512.png"
 ];
 
 self.addEventListener("install", (event) => {
