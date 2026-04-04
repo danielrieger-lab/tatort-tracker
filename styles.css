@@ -721,6 +721,11 @@ div.stat-modal-entry {
     margin-top: 12px;
   }
 
+  .episode-card.viewed {
+    background: rgba(53, 24, 90, 0.35) !important;
+    border-color: rgba(255, 255, 255, 0.28) !important;
+  }
+
   .rating-row {
     flex-direction: column;
     align-items: flex-start;
