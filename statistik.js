@@ -6,7 +6,6 @@ const EPISODES_SOURCE = "data/tatort-episodes.json";
 const modal = document.getElementById("stat-modal");
 const status = document.getElementById("stat-modal-status");
 const list = document.getElementById("stat-modal-list");
-const podium = document.getElementById("stat-podium");
 const hint = document.querySelector(".stat-modal-hint");
 const statTiles = document.querySelectorAll(".stat-tile");
 const statAverageValue = document.getElementById("stat-average-value");
@@ -256,10 +255,6 @@ function closeModal() {
 
 function renderList() {
   list.innerHTML = "";
-  if (podium) {
-    podium.innerHTML = "";
-    podium.classList.add("hidden");
-  }
 
   let ranked;
 
@@ -332,51 +327,8 @@ function renderList() {
 
   status.textContent = "";
 
-  let listItems = ranked;
-
-  if (currentMode === "best") {
-    const podiumItems = ranked.slice(0, 3);
-    listItems = ranked.slice(3);
-
-    if (podiumItems.length > 0) {
-      podium.classList.remove("hidden");
-      const heading = document.createElement("div");
-      heading.className = "stat-podium-heading";
-      heading.textContent = "Gewinnerpodest";
-
-      const podiumColumns = document.createElement("div");
-      podiumColumns.className = "stat-podium-columns";
-
-      const order = [1, 0, 2];
-      order.forEach((itemIndex) => {
-        const item = podiumItems[itemIndex];
-        if (!item) {
-          return;
-        }
-
-        const place = itemIndex + 1;
-        const entry = document.createElement("button");
-        entry.type = "button";
-        entry.className = `stat-podium-card place-${place}`;
-        entry.innerHTML = `
-          <span class="podium-place">${place}.</span>
-          <span class="podium-title">${escapeHtml(item.episode.title)}</span>
-          <span class="podium-score">${formatScore(item.score)}</span>
-        `;
-
-        entry.addEventListener("click", () => {
-          window.location.href = `index.html?episode=${encodeURIComponent(item.episode.no)}`;
-        });
-
-        podiumColumns.appendChild(entry);
-      });
-
-      podium.append(heading, podiumColumns);
-    }
-  }
-
-  listItems.forEach((item, index) => {
-    const positionNumber = currentMode === "best" ? index + 4 : index + 1;
+  ranked.forEach((item, index) => {
+    const positionNumber = index + 1;
     const position = `${positionNumber}.`;
     let entry;
     if (currentMode === "teams" || currentMode === "worstTeams") {
@@ -481,7 +433,7 @@ function openList(mode) {
   } else {
     title.textContent = "Beste Folgen";
     if (hint) {
-      hint.textContent = "Tippe auf eine Folge, um sie auf der Episoden-Seite zu öffnen.";
+      hint.textContent = "";
     }
   }
   openModal();
