@@ -40,6 +40,10 @@ body {
   line-height: 1.45;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -392,7 +396,7 @@ button {
   z-index: 1;
   width: min(920px, calc(100% - 24px));
   max-height: min(82vh, 900px);
-  overflow: auto;
+  overflow: hidden;
   margin: 8vh auto 0;
   padding: 18px;
   border-radius: 18px;
@@ -427,12 +431,28 @@ button {
 
 .episode-modal-body {
   margin-top: 10px;
+  max-height: calc(min(82vh, 900px) - 96px);
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.episode-modal-body::-webkit-scrollbar {
+  display: none;
 }
 
 .episode-modal-body .rating-area {
   margin-top: 0;
   border-top: 0;
   padding-top: 0;
+}
+
+.episode-modal .rating-icon.filled {
+  background-color: #ffffff;
+}
+
+.episode-modal .star.filled {
+  color: #ffffff;
 }
 
 @media (max-width: 560px) {
@@ -445,6 +465,10 @@ button {
     margin-top: 3vh;
     max-height: calc(100vh - 24px);
     padding: 14px;
+  }
+
+  .episode-modal-body {
+    max-height: calc(100vh - 132px);
   }
 }
 

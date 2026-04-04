@@ -818,6 +818,7 @@ function openEpisodeModal(episodeNo) {
   renderEpisodeModal(currentModalEpisodeNo);
   episodeModal.classList.remove("hidden");
   episodeModal.setAttribute("aria-hidden", "false");
+  document.body.classList.add("modal-open");
 }
 
 function closeEpisodeModal() {
@@ -827,6 +828,7 @@ function closeEpisodeModal() {
   episodeModal.classList.add("hidden");
   episodeModal.setAttribute("aria-hidden", "true");
   currentModalEpisodeNo = null;
+  document.body.classList.remove("modal-open");
 }
 
 function createTopFields(episodeNo) {
