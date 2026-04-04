@@ -2,6 +2,9 @@ const list = document.getElementById("episode-list");
 const catalogCount = document.getElementById("catalog-count");
 const searchInput = document.getElementById("episode-search");
 const suggestions = document.getElementById("episode-suggestions");
+const episodeModal = document.getElementById("episode-modal");
+const episodeModalTitle = document.getElementById("episode-modal-title");
+const episodeModalBody = document.getElementById("episode-modal-body");
 
 const RATING_STORAGE_KEY = "tatort-tracker-ratings-v1";
 const EPISODES_CACHE_KEY = "tatort-tracker-episodes-cache-v1";
@@ -43,7 +46,7 @@ let episodes = [];
 let filteredEpisodes = [];
 let ratingsByEpisode = readRatings();
 normalizeViewedStateFromRatings();
-let expandedEpisodeNo = null;
+let currentModalEpisodeNo = null;
 let failedRoleTitles = [];
 let locationCache = readLocationCache();
 
@@ -73,10 +76,6 @@ async function loadCatalog() {
     episodes = Array.isArray(cachedEpisodes) && cachedEpisodes.length > 0 ? cachedEpisodes : bundledEpisodes;
 
     failedRoleTitles = await loadFailedRoleTitles();
-
-    if (pendingEpisodeNo !== null) {
-      expandedEpisodeNo = pendingEpisodeNo;
-    }
 
     const syncResult = await runDailySync();
 
@@ -666,10 +665,6 @@ function applyFilter(query) {
       || location.includes(search);
   });
 
-  if (expandedEpisodeNo !== null && !filteredEpisodes.some((episode) => episode.no === expandedEpisodeNo)) {
-    expandedEpisodeNo = null;
-  }
-
   renderEpisodes(filteredEpisodes);
 }
 
@@ -724,70 +719,18 @@ function renderEpisodes(sourceEpisodes) {
       line.append(document.createTextNode(` (${location})`));
     }
 
-    const ratingArea = document.createElement("section");
-    ratingArea.className = "rating-area";
-    if (expandedEpisodeNo !== episode.no) {
-      ratingArea.classList.add("hidden");
-    }
-    ratingArea.addEventListener("click", (event) => {
-      event.stopPropagation();
-    });
-
-    const generalRating = document.createElement("div");
-    generalRating.className = "rating-row general-rating";
-    const generalLabel = document.createElement("span");
-    generalLabel.className = "rating-label";
-    generalLabel.textContent = "Gesamtbewertung";
-    const generalValue = document.createElement("span");
-    generalValue.className = "rating-value";
-    generalValue.textContent = `${getAverageRating(episode.no).toFixed(1)}/5`;
-    const generalStars = createReadOnlyStars(getAverageRating(episode.no));
-    generalRating.append(generalLabel, generalValue, generalStars);
-
-    const topFields = createTopFields(episode.no);
-
-    ratingArea.append(topFields, generalRating);
-
-    for (const item of RATING_KEYS) {
-      const ratingRow = document.createElement("div");
-      ratingRow.className = "rating-row";
-
-      const label = document.createElement("span");
-      label.className = "rating-label";
-      label.textContent = item.label;
-
-      const stars = createInteractiveStars(episode.no, item.key);
-      ratingRow.append(label, stars);
-      ratingArea.append(ratingRow);
-    }
-
-    const gruseligRow = document.createElement("div");
-    gruseligRow.className = "rating-row extra-rating";
-    const gruseligLabel = document.createElement("span");
-    gruseligLabel.className = "rating-label";
-    gruseligLabel.textContent = "gruselig (Kissenfaktor)";
-    const gruseligStars = createInteractiveStars(episode.no, GRUSELIG_KEY);
-    gruseligRow.append(gruseligLabel, gruseligStars);
-    ratingArea.append(gruseligRow);
-
-    const lovedCharacterRow = createCharacterField(episode, MOST_LOVED_KEY, "most loved Charakter");
-    const hatedCharacterRow = createCharacterField(episode, MOST_HATED_KEY, "most hated Charakter");
-    ratingArea.append(lovedCharacterRow, hatedCharacterRow);
-
     row.addEventListener("click", () => {
-      expandedEpisodeNo = expandedEpisodeNo === episode.no ? null : episode.no;
-      renderEpisodes(filteredEpisodes);
+      openEpisodeModal(episode.no);
     });
 
     row.addEventListener("keydown", (event) => {
       if (event.key === "Enter" || event.key === " ") {
         event.preventDefault();
-        expandedEpisodeNo = expandedEpisodeNo === episode.no ? null : episode.no;
-        renderEpisodes(filteredEpisodes);
+        openEpisodeModal(episode.no);
       }
     });
 
-    row.append(line, ratingArea);
+    row.append(line);
 
     list.appendChild(row);
   }
@@ -798,9 +741,92 @@ function renderEpisodes(sourceEpisodes) {
       requestAnimationFrame(() => {
         target.scrollIntoView({ block: "center", behavior: "smooth" });
       });
+      openEpisodeModal(pendingEpisodeNo);
       pendingEpisodeNo = null;
     }
   }
+}
+
+function createRatingArea(episode) {
+  const ratingArea = document.createElement("section");
+  ratingArea.className = "rating-area";
+
+  const generalRating = document.createElement("div");
+  generalRating.className = "rating-row general-rating";
+  const generalLabel = document.createElement("span");
+  generalLabel.className = "rating-label";
+  generalLabel.textContent = "Gesamtbewertung";
+  const generalValue = document.createElement("span");
+  generalValue.className = "rating-value";
+  generalValue.textContent = `${getAverageRating(episode.no).toFixed(1)}/5`;
+  const generalStars = createReadOnlyStars(getAverageRating(episode.no));
+  generalRating.append(generalLabel, generalValue, generalStars);
+
+  const topFields = createTopFields(episode.no);
+  ratingArea.append(topFields, generalRating);
+
+  for (const item of RATING_KEYS) {
+    const ratingRow = document.createElement("div");
+    ratingRow.className = "rating-row";
+
+    const label = document.createElement("span");
+    label.className = "rating-label";
+    label.textContent = item.label;
+
+    const stars = createInteractiveStars(episode.no, item.key);
+    ratingRow.append(label, stars);
+    ratingArea.append(ratingRow);
+  }
+
+  const gruseligRow = document.createElement("div");
+  gruseligRow.className = "rating-row extra-rating";
+  const gruseligLabel = document.createElement("span");
+  gruseligLabel.className = "rating-label";
+  gruseligLabel.textContent = "gruselig (Kissenfaktor)";
+  const gruseligStars = createInteractiveStars(episode.no, GRUSELIG_KEY);
+  gruseligRow.append(gruseligLabel, gruseligStars);
+  ratingArea.append(gruseligRow);
+
+  const lovedCharacterRow = createCharacterField(episode, MOST_LOVED_KEY, "most loved Charakter");
+  const hatedCharacterRow = createCharacterField(episode, MOST_HATED_KEY, "most hated Charakter");
+  ratingArea.append(lovedCharacterRow, hatedCharacterRow);
+
+  return ratingArea;
+}
+
+function renderEpisodeModal(episodeNo) {
+  const episode = episodes.find((item) => Number(item.no) === Number(episodeNo));
+  if (!episode || !episodeModalBody || !episodeModalTitle) {
+    return;
+  }
+
+  const location = String(episode.location || "").trim();
+  episodeModalTitle.textContent = location
+    ? `${episode.no} - ${episode.title} (${location})`
+    : `${episode.no} - ${episode.title}`;
+
+  episodeModalBody.innerHTML = "";
+  episodeModalBody.appendChild(createRatingArea(episode));
+}
+
+function openEpisodeModal(episodeNo) {
+  if (!episodeModal) {
+    return;
+  }
+
+  currentModalEpisodeNo = Number(episodeNo);
+  renderEpisodeModal(currentModalEpisodeNo);
+  episodeModal.classList.remove("hidden");
+  episodeModal.setAttribute("aria-hidden", "false");
+}
+
+function closeEpisodeModal() {
+  if (!episodeModal) {
+    return;
+  }
+  episodeModal.classList.add("hidden");
+  episodeModal.setAttribute("aria-hidden", "true");
+  currentModalEpisodeNo = null;
 }
 
 function createTopFields(episodeNo) {
@@ -832,6 +858,9 @@ function createTopFields(episodeNo) {
     setEpisodeTextChoice(episodeNo, ZUERST_GESEHEN_KEY, dateInput.value || "");
     countInput.value = String(getEpisodeNumberChoice(episodeNo, ANZAHL_KEY, 0));
     renderEpisodes(filteredEpisodes);
+    if (currentModalEpisodeNo === Number(episodeNo)) {
+      renderEpisodeModal(episodeNo);
+    }
   });
 
   leftControls.append(dateInput);
@@ -852,6 +881,10 @@ function createTopFields(episodeNo) {
   countInput.addEventListener("input", () => {
     setEpisodeNumberChoice(episodeNo, ANZAHL_KEY, countInput.value);
     countInput.value = String(getEpisodeNumberChoice(episodeNo, ANZAHL_KEY, 0));
+    renderEpisodes(filteredEpisodes);
+    if (currentModalEpisodeNo === Number(episodeNo)) {
+      renderEpisodeModal(episodeNo);
+    }
   });
 
   right.append(countInput);
@@ -987,6 +1020,9 @@ function createInteractiveStars(episodeNo, ratingKey) {
       const nextValue = existing === star ? 0 : star;
       setEpisodeRating(episodeNo, ratingKey, nextValue);
       renderEpisodes(filteredEpisodes);
+      if (currentModalEpisodeNo === Number(episodeNo)) {
+        renderEpisodeModal(episodeNo);
+      }
     });
 
     wrapper.appendChild(button);
@@ -1151,3 +1187,13 @@ if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("sw.js");
   });
 }
+
+document.querySelectorAll("[data-close-episode-modal]").forEach((element) => {
+  element.addEventListener("click", closeEpisodeModal);
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && episodeModal && !episodeModal.classList.contains("hidden")) {
+    closeEpisodeModal();
+  }
+});

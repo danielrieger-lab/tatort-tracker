@@ -41,6 +41,17 @@
       </section>
     </main>
 
+    <div class="episode-modal hidden" id="episode-modal" aria-hidden="true">
+      <div class="episode-modal-backdrop" data-close-episode-modal></div>
+      <section class="episode-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="episode-modal-title">
+        <div class="episode-modal-header">
+          <h2 id="episode-modal-title">Folge</h2>
+          <button class="episode-modal-close" type="button" data-close-episode-modal aria-label="Schließen">×</button>
+        </div>
+        <div id="episode-modal-body" class="episode-modal-body"></div>
+      </section>
+    </div>
+
     <footer class="bottom-bar" aria-label="Navigation">
       <div class="bottom-bar-inner">
         <a class="bottom-btn active" href="index.html" aria-current="page">
