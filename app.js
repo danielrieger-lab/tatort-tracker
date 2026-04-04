@@ -42,6 +42,7 @@ if (!Number.isFinite(pendingEpisodeNo) || pendingEpisodeNo <= 0) {
 let episodes = [];
 let filteredEpisodes = [];
 let ratingsByEpisode = readRatings();
+normalizeViewedStateFromRatings();
 let expandedEpisodeNo = null;
 let failedRoleTitles = [];
 let locationCache = readLocationCache();
@@ -701,6 +702,9 @@ function renderEpisodes(sourceEpisodes) {
   for (const episode of sourceEpisodes) {
     const row = document.createElement("li");
     row.className = "episode-card";
+    if (getEpisodeNumberChoice(episode.no, ANZAHL_KEY, 0) > 0) {
+      row.classList.add("viewed");
+    }
     row.id = `episode-${episode.no}`;
     row.setAttribute("role", "button");
     row.setAttribute("tabindex", "0");
@@ -826,6 +830,8 @@ function createTopFields(episodeNo) {
   dateInput.addEventListener("keydown", (event) => event.stopPropagation());
   dateInput.addEventListener("input", () => {
     setEpisodeTextChoice(episodeNo, ZUERST_GESEHEN_KEY, dateInput.value || "");
+    countInput.value = String(getEpisodeNumberChoice(episodeNo, ANZAHL_KEY, 0));
+    renderEpisodes(filteredEpisodes);
   });
 
   leftControls.append(dateInput);
@@ -1011,6 +1017,7 @@ function setEpisodeRating(episodeNo, ratingKey, value) {
     ...current,
     [ratingKey]: Math.max(0, Math.min(5, Number(value) || 0))
   };
+  ensureEpisodeViewedState(episodeNo);
   persistRatings();
 }
 
@@ -1026,6 +1033,7 @@ function setEpisodeTextChoice(episodeNo, fieldKey, value) {
     ...current,
     [fieldKey]: String(value || "")
   };
+  ensureEpisodeViewedState(episodeNo);
   persistRatings();
 }
 
@@ -1040,7 +1048,11 @@ function getEpisodeNumberChoice(episodeNo, fieldKey, defaultValue) {
 
 function setEpisodeNumberChoice(episodeNo, fieldKey, value) {
   const numeric = Number(value);
-  const safeValue = Number.isFinite(numeric) && numeric >= 0 ? Math.floor(numeric) : 0;
+  let safeValue = Number.isFinite(numeric) && numeric >= 0 ? Math.floor(numeric) : 0;
+
+  if (fieldKey === ANZAHL_KEY && safeValue === 0 && shouldAutoSetViewed(episodeNo)) {
+    safeValue = 1;
+  }
 
   const key = String(episodeNo);
   const current = ratingsByEpisode[key] || {};
@@ -1048,7 +1060,44 @@ function setEpisodeNumberChoice(episodeNo, fieldKey, value) {
     ...current,
     [fieldKey]: safeValue
   };
+  ensureEpisodeViewedState(episodeNo);
   persistRatings();
+}
+
+function shouldAutoSetViewed(episodeNo) {
+  const zuerstGesehen = getEpisodeTextChoice(episodeNo, ZUERST_GESEHEN_KEY).trim();
+  const hasMainRating = RATING_KEYS.some((item) => getEpisodeRating(episodeNo, item.key) > 0);
+  const hasGruseligRating = getEpisodeRating(episodeNo, GRUSELIG_KEY) > 0;
+  return Boolean(zuerstGesehen || hasMainRating || hasGruseligRating);
+}
+
+function ensureEpisodeViewedState(episodeNo) {
+  const key = String(episodeNo);
+  const current = ratingsByEpisode[key] || {};
+  const anzahl = Number(current[ANZAHL_KEY] || 0);
+  if (shouldAutoSetViewed(episodeNo) && (!Number.isFinite(anzahl) || anzahl <= 0)) {
+    ratingsByEpisode[key] = {
+      ...current,
+      [ANZAHL_KEY]: 1
+    };
+  }
+}
+
+function normalizeViewedStateFromRatings() {
+  let changed = false;
+
+  for (const [episodeNo] of Object.entries(ratingsByEpisode)) {
+    const before = getEpisodeNumberChoice(episodeNo, ANZAHL_KEY, 0);
+    ensureEpisodeViewedState(episodeNo);
+    const after = getEpisodeNumberChoice(episodeNo, ANZAHL_KEY, 0);
+    if (before !== after) {
+      changed = true;
+    }
+  }
+
+  if (changed) {
+    persistRatings();
+  }
 }
 
 function getAverageRating(episodeNo) {

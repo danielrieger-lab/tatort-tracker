@@ -134,6 +134,11 @@ button {
   cursor: pointer;
 }
 
+.episode-card.viewed {
+  background: rgba(53, 24, 90, 0.35);
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
 .episode-line {
   margin: 0;
   font-size: 1rem;

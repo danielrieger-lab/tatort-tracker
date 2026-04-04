@@ -1,4 +1,4 @@
-const CACHE_NAME = "tatort-tracker-v23";
+const CACHE_NAME = "tatort-tracker-v24";
 const APP_ASSETS = [
   "./",
   "./index.html",
