@@ -2,12 +2,15 @@ const RATING_STORAGE_KEY = "tatort-tracker-ratings-v1";
 const ERMITTLER_RANKING_STORAGE_KEY = "tatort-tracker-ermittler-rankings-v1";
 const LOCATION_RANKING_STORAGE_KEY = "tatort-tracker-location-rankings-v1";
 const EPISODES_SOURCE = "data/tatort-episodes.json";
+const WATCHED_COUNT_FIELD_KEY = "anzahl";
 
 const modal = document.getElementById("stat-modal");
 const status = document.getElementById("stat-modal-status");
 const list = document.getElementById("stat-modal-list");
 const statTiles = document.querySelectorAll(".stat-tile");
 const statAverageValue = document.getElementById("stat-average-value");
+const statWatchedValue = document.getElementById("stat-watched-value");
+const statWatchedRatio = document.getElementById("stat-watched-ratio");
 
 let episodes = [];
 let ratingsByEpisode = readRatings();
@@ -30,6 +33,7 @@ function readRatings() {
 function refreshRatingsAndAverageTile() {
   ratingsByEpisode = readRatings();
   updateOverallGeneralMeanTile();
+  updateWatchedEpisodesTile();
 }
 
 function getEpisodeRating(episodeNo, ratingKey) {
@@ -242,6 +246,36 @@ function updateOverallGeneralMeanTile() {
   statAverageValue.textContent = formatScore(mean);
 }
 
+function getEpisodeWatchedCount(episodeNo) {
+  const entry = ratingsByEpisode[String(episodeNo)] || {};
+  const count = Number(entry[WATCHED_COUNT_FIELD_KEY] || 0);
+  if (!Number.isFinite(count) || count <= 0) {
+    return 0;
+  }
+  return Math.floor(count);
+}
+
+function updateWatchedEpisodesTile() {
+  if (!statWatchedValue || !statWatchedRatio) {
+    return;
+  }
+
+  const importedEpisodesCount = episodes.length;
+  if (importedEpisodesCount <= 0) {
+    statWatchedValue.textContent = "0";
+    statWatchedRatio.textContent = "0%";
+    return;
+  }
+
+  const watchedEpisodesCount = episodes.reduce((acc, episode) => {
+    return acc + (getEpisodeWatchedCount(episode.no) > 0 ? 1 : 0);
+  }, 0);
+
+  const watchedPercentage = (watchedEpisodesCount / importedEpisodesCount) * 100;
+  statWatchedValue.textContent = String(watchedEpisodesCount);
+  statWatchedRatio.textContent = `${watchedPercentage.toFixed(1)}%`;
+}
+
 function openModal() {
   modal.classList.remove("hidden");
   modal.setAttribute("aria-hidden", "false");
@@ -333,7 +367,7 @@ function renderList() {
     if (currentMode === "teams" || currentMode === "worstTeams") {
       entry = document.createElement("div");
       entry.className = "stat-modal-entry";
-      const locationPart = item.location ? ` (${escapeHtml(item.location)})` : "";
+      const locationPart = item.location ? ` <span class="entry-location">(${escapeHtml(item.location)})</span>` : "";
       entry.innerHTML = `
         <span class="entry-left"><span class="entry-no">${position}</span><span class="entry-title">${escapeHtml(item.ermittler)}${locationPart}</span></span>
         <span class="entry-score">${formatScore(item.score)}</span>
@@ -389,10 +423,12 @@ async function loadEpisodes() {
     const data = await response.json();
     episodes = Array.isArray(data) ? data : [];
     updateOverallGeneralMeanTile();
+    updateWatchedEpisodesTile();
     renderList();
   } catch {
     status.textContent = "Die Statistik konnte nicht geladen werden.";
     updateOverallGeneralMeanTile();
+    updateWatchedEpisodesTile();
   }
 }
 

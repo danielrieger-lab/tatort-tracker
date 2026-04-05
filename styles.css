@@ -566,6 +566,24 @@ button {
   font-size: clamp(0.9rem, 2.2vw, 1.02rem);
 }
 
+.stat-tile-watched {
+  flex-direction: column;
+  gap: 6px;
+}
+
+.stat-watched-label {
+  font-size: clamp(0.82rem, 2vw, 0.94rem);
+}
+
+.stat-watched-value {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+}
+
+.stat-watched-ratio {
+  font-size: clamp(0.84rem, 2.1vw, 0.98rem);
+  font-family: "Futura Light", "Futura", "Trebuchet MS", sans-serif;
+}
+
 .stat-modal.hidden {
   display: none;
 }
@@ -670,6 +688,11 @@ div.stat-modal-entry {
 .stat-modal-entry .entry-title {
   font-family: "Futura Black", "Futura", "Trebuchet MS", sans-serif;
   font-weight: 700;
+}
+
+.stat-modal-entry .entry-location {
+  font-family: "Futura Light", "Futura", "Trebuchet MS", sans-serif;
+  font-weight: 400;
 }
 
 @media (max-width: 560px) {
