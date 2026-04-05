@@ -592,6 +592,19 @@ button {
 }
 
 .stat-tile-average {
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stat-average-symbol {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+}
+
+.stat-average-value {
+  font-size: clamp(0.9rem, 2.2vw, 1.02rem);
+}
+
+.stat-tile-watched {
   grid-column: 1 / -1;
   aspect-ratio: auto;
   min-height: 122px;
@@ -603,17 +616,17 @@ button {
   gap: 14px;
 }
 
-.stat-average-symbol {
+.stat-watched-label {
   font-size: clamp(0.9rem, 2.2vw, 1rem);
   font-family: "Futura Light", "Futura", "Trebuchet MS", sans-serif;
 }
 
-.stat-average-value {
+.stat-watched-value {
   font-size: clamp(1.5rem, 4.2vw, 2rem);
   line-height: 1.05;
 }
 
-.stat-tile-watched {
+.stat-watched-ratio {
   font-size: clamp(1rem, 2.8vw, 1.2rem);
   line-height: 1;
   font-family: "Futura Black", "Futura", "Trebuchet MS", sans-serif;
@@ -640,22 +653,8 @@ button {
   width: 74px;
   height: 74px;
   border-radius: 999px;
-  background:
-    radial-gradient(circle at center, rgba(0, 0, 0, 0.9) 50%, transparent 52%),
-    conic-gradient(var(--accent) var(--watched-pct), rgba(255, 255, 255, 0.24) 0);
+  background: conic-gradient(var(--accent) var(--watched-pct), #000000 0);
   border: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-.stat-modal-entry .entry-location {
-  gap: 6px;
-}
-
-  font-size: clamp(1.2rem, 3vw, 1.5rem);
-}
-
-.stat-watched-ratio {
-  font-size: clamp(0.84rem, 2.1vw, 0.98rem);
-  font-family: "Futura Light", "Futura", "Trebuchet MS", sans-serif;
 }
 
 .stat-modal.hidden {
