@@ -304,6 +304,44 @@ button {
   opacity: 0.9;
 }
 
+.besonderheiten-row,
+.kommentar-row {
+  margin-top: 8px;
+}
+
+.besonderheiten-text {
+  margin: 0;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
+  padding: 8px 10px;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  font-family: "Futura Light", "Futura", "Trebuchet MS", sans-serif;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.kommentar-input {
+  width: 100%;
+  resize: vertical;
+  min-height: 72px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
+  padding: 8px 10px;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  font-family: "Futura Light", "Futura", "Trebuchet MS", sans-serif;
+}
+
+.kommentar-input::placeholder {
+  color: rgba(255, 255, 255, 0.72);
+}
+
 .stars {
   display: inline-flex;
   align-items: center;

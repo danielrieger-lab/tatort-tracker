@@ -25,6 +25,7 @@ const RATING_KEYS = [
 const GRUSELIG_KEY = "gruselig";
 const MOST_LOVED_KEY = "mostLovedCharacter";
 const MOST_HATED_KEY = "mostHatedCharacter";
+const KOMMENTARE_KEY = "kommentare";
 const ZUERST_GESEHEN_KEY = "zuerstGesehen";
 const ANZAHL_KEY = "anzahl";
 const GESAMT_KEY = "gesamt";
@@ -789,9 +790,55 @@ function createRatingArea(episode) {
 
   const lovedCharacterRow = createCharacterField(episode, MOST_LOVED_KEY, "most loved Charakter");
   const hatedCharacterRow = createCharacterField(episode, MOST_HATED_KEY, "most hated Charakter");
-  ratingArea.append(lovedCharacterRow, hatedCharacterRow);
+  const besonderheitenRow = createBesonderheitenBlock(episode);
+  const kommentarRow = createKommentarField(episode.no);
+  ratingArea.append(lovedCharacterRow, hatedCharacterRow, besonderheitenRow, kommentarRow);
 
   return ratingArea;
+}
+
+function createBesonderheitenBlock(episode) {
+  const row = document.createElement("div");
+  row.className = "rating-row besonderheiten-row";
+
+  const label = document.createElement("span");
+  label.className = "rating-label";
+  label.textContent = "Besonderheiten";
+
+  const text = document.createElement("p");
+  text.className = "besonderheiten-text";
+  text.textContent = String(episode.besonderheiten || "").trim() || "Keine Besonderheiten.";
+
+  row.append(label, text);
+  return row;
+}
+
+function createKommentarField(episodeNo) {
+  const row = document.createElement("div");
+  row.className = "rating-row kommentar-row";
+
+  const label = document.createElement("span");
+  label.className = "rating-label";
+  label.textContent = "Kommentare";
+
+  const input = document.createElement("textarea");
+  input.className = "kommentar-input";
+  input.rows = 3;
+  input.placeholder = "Kommentar eingeben";
+  input.value = getEpisodeTextChoice(episodeNo, KOMMENTARE_KEY);
+
+  const stop = (event) => {
+    event.stopPropagation();
+  };
+
+  input.addEventListener("click", stop);
+  input.addEventListener("keydown", stop);
+  input.addEventListener("input", () => {
+    setEpisodeTextChoice(episodeNo, KOMMENTARE_KEY, input.value);
+  });
+
+  row.append(label, input);
+  return row;
 }
 
 function renderEpisodeModal(episodeNo) {
