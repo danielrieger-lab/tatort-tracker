@@ -592,28 +592,64 @@ button {
 }
 
 .stat-tile-average {
-  flex-direction: column;
-  gap: 8px;
+  grid-column: 1 / -1;
+  aspect-ratio: auto;
+  min-height: 122px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  gap: 14px;
 }
 
 .stat-average-symbol {
-  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-size: clamp(0.9rem, 2.2vw, 1rem);
+  font-family: "Futura Light", "Futura", "Trebuchet MS", sans-serif;
 }
 
 .stat-average-value {
-  font-size: clamp(0.9rem, 2.2vw, 1.02rem);
+  font-size: clamp(1.5rem, 4.2vw, 2rem);
+  line-height: 1.05;
 }
 
 .stat-tile-watched {
+  font-size: clamp(1rem, 2.8vw, 1.2rem);
+  line-height: 1;
+  font-family: "Futura Black", "Futura", "Trebuchet MS", sans-serif;
+}
+
+.stat-watched-left,
+.stat-watched-right {
+  display: flex;
   flex-direction: column;
+}
+
+.stat-watched-left {
+  gap: 8px;
+}
+
+.stat-watched-right {
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.stat-watched-chart {
+  --watched-pct: 0%;
+  width: 74px;
+  height: 74px;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at center, rgba(0, 0, 0, 0.9) 50%, transparent 52%),
+    conic-gradient(var(--accent) var(--watched-pct), rgba(255, 255, 255, 0.24) 0);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.stat-modal-entry .entry-location {
   gap: 6px;
 }
 
-.stat-watched-label {
-  font-size: clamp(0.82rem, 2vw, 0.94rem);
-}
-
-.stat-watched-value {
   font-size: clamp(1.2rem, 3vw, 1.5rem);
 }
 
@@ -743,6 +779,16 @@ div.stat-modal-entry {
   .stat-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     margin-top: 12px;
+  }
+
+  .stat-tile-watched {
+    min-height: 112px;
+    padding: 12px;
+  }
+
+  .stat-watched-chart {
+    width: 66px;
+    height: 66px;
   }
 
   .episode-card.viewed {

@@ -21,21 +21,26 @@
 
       <section class="card statistik-frame" aria-labelledby="statistik-title">
         <div class="stat-grid" aria-label="Statistik-Kacheln">
-          <div class="stat-tile">Beste Folgen</div>
-          <div class="stat-tile">Schlechteste Folgen</div>
-          <div class="stat-tile">Beste Teams</div>
-          <div class="stat-tile">Schlechteste Teams</div>
-          <div class="stat-tile">Beste Städte</div>
-          <div class="stat-tile">Schlechteste Städte</div>
-          <div class="stat-tile">Gruseligste Folgen</div>
+          <div class="stat-tile stat-tile-watched" aria-live="polite">
+            <div class="stat-watched-left">
+              <span class="stat-watched-label">bisher gesehen Folgen</span>
+              <span class="stat-watched-value" id="stat-watched-value">0</span>
+            </div>
+            <div class="stat-watched-right">
+              <span class="stat-watched-ratio" id="stat-watched-ratio">0%</span>
+              <span class="stat-watched-chart" id="stat-watched-chart" aria-hidden="true"></span>
+            </div>
+          </div>
+          <div class="stat-tile" data-open-list="best">Beste Folgen</div>
+          <div class="stat-tile" data-open-list="worst">Schlechteste Folgen</div>
+          <div class="stat-tile" data-open-list="teams">Beste Teams</div>
+          <div class="stat-tile" data-open-list="worstTeams">Schlechteste Teams</div>
+          <div class="stat-tile" data-open-list="cities">Beste Städte</div>
+          <div class="stat-tile" data-open-list="worstCities">Schlechteste Städte</div>
+          <div class="stat-tile" data-open-list="scary">Gruseligste Folgen</div>
           <div class="stat-tile stat-tile-average" aria-live="polite">
             <span class="stat-average-symbol">Ø</span>
             <span class="stat-average-value" id="stat-average-value">--/5</span>
-          </div>
-          <div class="stat-tile stat-tile-watched" aria-live="polite">
-            <span class="stat-watched-label">bisher gesehen Tatorte</span>
-            <span class="stat-watched-value" id="stat-watched-value">0</span>
-            <span class="stat-watched-ratio" id="stat-watched-ratio">0%</span>
           </div>
         </div>
       </section>

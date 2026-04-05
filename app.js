@@ -75,6 +75,7 @@ async function loadCatalog() {
 
     const bundledEpisodes = await response.json();
     episodes = Array.isArray(cachedEpisodes) && cachedEpisodes.length > 0 ? cachedEpisodes : bundledEpisodes;
+    applyBundledEpisodeMetadata(episodes, bundledEpisodes);
 
     failedRoleTitles = await loadFailedRoleTitles();
 
@@ -412,6 +413,7 @@ function parseEpisodeRowsFromListRaw(raw) {
       sender: cleanWikiText(cells[2]),
       date: cleanWikiText(cells[3]),
       ermittler: cleanWikiText(cells[4]),
+      besonderheiten: cleanWikiText(cells[8] || ""),
       ermittlerLinks: extractWikiLinks(cells[4]),
       titleLinks: extractWikiLinks(cells[1])
     });
@@ -540,6 +542,7 @@ function mergeEpisodesFromList(currentEpisodes, latestRows) {
       target.sender = row.sender;
       target.date = row.date;
       target.ermittler = row.ermittler;
+      target.besonderheiten = row.besonderheiten || String(target.besonderheiten || "");
       if (!Array.isArray(target.roles)) {
         target.roles = [];
       }
@@ -552,6 +555,7 @@ function mergeEpisodesFromList(currentEpisodes, latestRows) {
       sender: row.sender,
       date: row.date,
       ermittler: row.ermittler,
+      besonderheiten: row.besonderheiten || "",
       location: "",
       roles: []
     };
@@ -562,6 +566,21 @@ function mergeEpisodesFromList(currentEpisodes, latestRows) {
 
   merged.sort((a, b) => Number(a.no) - Number(b.no));
   return merged;
+}
+
+function applyBundledEpisodeMetadata(targetEpisodes, bundledEpisodes) {
+  const bundledByNo = new Map(
+    (Array.isArray(bundledEpisodes) ? bundledEpisodes : [])
+      .map((episode) => [Number(episode.no), String(episode.besonderheiten || "")])
+  );
+
+  for (const episode of Array.isArray(targetEpisodes) ? targetEpisodes : []) {
+    const key = Number(episode.no);
+    const fallback = bundledByNo.get(key) || "";
+    if (episode && typeof episode === "object") {
+      episode.besonderheiten = String(episode.besonderheiten || fallback || "");
+    }
+  }
 }
 
 function extractRolesFromBesetzung(raw) {

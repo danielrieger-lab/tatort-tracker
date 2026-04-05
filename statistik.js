@@ -11,6 +11,7 @@ const statTiles = document.querySelectorAll(".stat-tile");
 const statAverageValue = document.getElementById("stat-average-value");
 const statWatchedValue = document.getElementById("stat-watched-value");
 const statWatchedRatio = document.getElementById("stat-watched-ratio");
+const statWatchedChart = document.getElementById("stat-watched-chart");
 
 let episodes = [];
 let ratingsByEpisode = readRatings();
@@ -264,6 +265,9 @@ function updateWatchedEpisodesTile() {
   if (importedEpisodesCount <= 0) {
     statWatchedValue.textContent = "0";
     statWatchedRatio.textContent = "0%";
+    if (statWatchedChart) {
+      statWatchedChart.style.setProperty("--watched-pct", "0%");
+    }
     return;
   }
 
@@ -274,6 +278,9 @@ function updateWatchedEpisodesTile() {
   const watchedPercentage = (watchedEpisodesCount / importedEpisodesCount) * 100;
   statWatchedValue.textContent = String(watchedEpisodesCount);
   statWatchedRatio.textContent = `${watchedPercentage.toFixed(1)}%`;
+  if (statWatchedChart) {
+    statWatchedChart.style.setProperty("--watched-pct", `${watchedPercentage.toFixed(1)}%`);
+  }
 }
 
 function openModal() {
@@ -460,40 +467,14 @@ function openList(mode) {
   renderList();
 }
 
-if (statTiles[0]) {
-  statTiles[0].style.cursor = "pointer";
-  statTiles[0].addEventListener("click", () => openList("best"));
-}
-
-if (statTiles[1]) {
-  statTiles[1].style.cursor = "pointer";
-  statTiles[1].addEventListener("click", () => openList("worst"));
-}
-
-if (statTiles[2]) {
-  statTiles[2].style.cursor = "pointer";
-  statTiles[2].addEventListener("click", () => openList("teams"));
-}
-
-if (statTiles[3]) {
-  statTiles[3].style.cursor = "pointer";
-  statTiles[3].addEventListener("click", () => openList("worstTeams"));
-}
-
-if (statTiles[4]) {
-  statTiles[4].style.cursor = "pointer";
-  statTiles[4].addEventListener("click", () => openList("cities"));
-}
-
-if (statTiles[5]) {
-  statTiles[5].style.cursor = "pointer";
-  statTiles[5].addEventListener("click", () => openList("worstCities"));
-}
-
-if (statTiles[6]) {
-  statTiles[6].style.cursor = "pointer";
-  statTiles[6].addEventListener("click", () => openList("scary"));
-}
+statTiles.forEach((tile) => {
+  const mode = tile.dataset.openList;
+  if (!mode) {
+    return;
+  }
+  tile.style.cursor = "pointer";
+  tile.addEventListener("click", () => openList(mode));
+});
 
 window.addEventListener("storage", (event) => {
   if (event.key === RATING_STORAGE_KEY || event.key === null) {
