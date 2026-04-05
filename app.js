@@ -901,16 +901,16 @@ function createTopFields(episodeNo) {
     dateInput.value = savedDate;
   }
 
-  dateInput.addEventListener("click", (event) => event.stopPropagation());
-  dateInput.addEventListener("keydown", (event) => event.stopPropagation());
-  dateInput.addEventListener("input", () => {
+  const commitDateValue = () => {
     setEpisodeTextChoice(episodeNo, ZUERST_GESEHEN_KEY, dateInput.value || "");
     countInput.value = String(getEpisodeNumberChoice(episodeNo, ANZAHL_KEY, 0));
     renderEpisodes(filteredEpisodes);
-    if (currentModalEpisodeNo === Number(episodeNo)) {
-      renderEpisodeModal(episodeNo);
-    }
-  });
+  };
+
+  dateInput.addEventListener("click", (event) => event.stopPropagation());
+  dateInput.addEventListener("keydown", (event) => event.stopPropagation());
+  dateInput.addEventListener("change", commitDateValue);
+  dateInput.addEventListener("blur", commitDateValue);
 
   leftControls.append(dateInput);
   left.append(leftLabel, leftControls);
