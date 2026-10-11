@@ -103,14 +103,14 @@ async function loadCatalog() {
 }
 
 async function runDailySync() {
-  if (!shouldRunDailySync()) {
-    return { ran: false, error: false };
-  }
-
   try {
     const listRaw = await fetchWikipediaPageRaw("Liste_der_Tatort-Folgen");
     const latestRows = parseEpisodeRowsFromListRaw(listRaw);
     episodes = mergeEpisodesFromList(episodes, latestRows);
+
+    if (!shouldRunDailySync()) {
+      return { ran: true, error: false };
+    }
 
     const uniqueErmittlerLinks = Array.from(new Set(latestRows.flatMap((row) => Array.isArray(row.ermittlerLinks) ? row.ermittlerLinks : [])));
     const uniqueTitleLinks = Array.from(new Set(latestRows.flatMap((row) => Array.isArray(row.titleLinks) ? row.titleLinks : [])));
@@ -195,7 +195,6 @@ async function runDailySync() {
     localStorage.setItem(SYNC_LAST_RUN_KEY, String(Date.now()));
     return { ran: true, error: false };
   } catch {
-    localStorage.setItem(SYNC_LAST_RUN_KEY, String(Date.now()));
     return { ran: true, error: true };
   }
 }
