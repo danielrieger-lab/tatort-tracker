@@ -74,7 +74,7 @@ async function loadCatalog() {
     }
 
     const bundledEpisodes = await response.json();
-    episodes = Array.isArray(cachedEpisodes) && cachedEpisodes.length > 0 ? cachedEpisodes : bundledEpisodes;
+    episodes = mergeEpisodeCatalog(cachedEpisodes, bundledEpisodes);
     applyBundledEpisodeMetadata(episodes, bundledEpisodes);
 
     failedRoleTitles = await loadFailedRoleTitles();
@@ -232,6 +232,26 @@ async function persistEpisodesCache() {
   }
 
   await writeToIndexedDb(LOCAL_DB_EPISODES_KEY, episodes);
+}
+
+function mergeEpisodeCatalog(cachedEpisodes, bundledEpisodes) {
+  const cached = Array.isArray(cachedEpisodes) ? cachedEpisodes : [];
+  const bundled = Array.isArray(bundledEpisodes) ? bundledEpisodes : [];
+  const cachedByNo = new Map(cached.map((episode) => [Number(episode.no), episode]));
+  const bundledNumbers = new Set(bundled.map((episode) => Number(episode.no)));
+  const merged = bundled.map((episode) => ({
+    ...(cachedByNo.get(Number(episode.no)) || {}),
+    ...episode
+  }));
+
+  for (const episode of cached) {
+    if (!bundledNumbers.has(Number(episode.no))) {
+      merged.push(episode);
+    }
+  }
+
+  merged.sort((a, b) => Number(a.no) - Number(b.no));
+  return merged;
 }
 
 function readLocationCache() {
