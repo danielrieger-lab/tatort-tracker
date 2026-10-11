@@ -1,4 +1,4 @@
-const CACHE_NAME = "tatort-tracker-v36";
+const CACHE_NAME = "tatort-tracker-v37";
 const APP_ASSETS = [
   "./",
   "./index.html",
@@ -48,16 +48,17 @@ self.addEventListener("fetch", (event) => {
   const request = event.request;
 
   if (new URL(request.url).pathname.endsWith("/data/tatort-episodes.json")) {
+    const catalogUrl = new URL("./data/tatort-episodes.json", self.registration.scope).href;
     event.respondWith(
       fetch(request)
         .then((response) => {
           if (response.ok) {
             const copy = response.clone();
-            caches.open(CACHE_NAME).then((cache) => cache.put(request, copy));
+            caches.open(CACHE_NAME).then((cache) => cache.put(catalogUrl, copy));
           }
           return response;
         })
-        .catch(() => caches.match(request))
+        .catch(() => caches.match(catalogUrl))
     );
     return;
   }

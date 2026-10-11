@@ -15,6 +15,7 @@ const LOCAL_DB_NAME = "tatort-tracker-db";
 const LOCAL_DB_VERSION = 1;
 const LOCAL_DB_STORE = "appData";
 const LOCAL_DB_EPISODES_KEY = "episodes";
+const EPISODES_SOURCE = "data/tatort-episodes.json";
 const WIKIPEDIA_API = "https://de.wikipedia.org/w/api.php";
 const RATING_KEYS = [
   { key: "fallqualitaet", label: "Fallqualität" },
@@ -68,7 +69,7 @@ async function loadCatalog() {
   }
 
   try {
-    const response = await fetch("data/tatort-episodes.json", { cache: "no-store" });
+    const response = await fetch(`${EPISODES_SOURCE}?refresh=${Date.now()}`, { cache: "no-store" });
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}`);
     }

@@ -422,7 +422,7 @@ function escapeHtml(value) {
 
 async function loadEpisodes() {
   try {
-    const response = await fetch(EPISODES_SOURCE, { cache: "no-store" });
+    const response = await fetch(`${EPISODES_SOURCE}?refresh=${Date.now()}`, { cache: "no-store" });
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}`);
     }
