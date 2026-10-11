@@ -78,14 +78,17 @@ async function loadCatalog() {
     episodes = mergeEpisodeCatalog(cachedEpisodes, bundledEpisodes);
     applyBundledEpisodeMetadata(episodes, bundledEpisodes);
 
+    buildSuggestions(episodes);
+    applyFilter(searchInput.value);
+    catalogCount.textContent = `${episodes.length.toLocaleString("de-DE")} Tatort-Folgen geladen.`;
+
     failedRoleTitles = await loadFailedRoleTitles();
 
     const syncResult = await runDailySync();
 
+    catalogCount.textContent = `${episodes.length.toLocaleString("de-DE")} Tatort-Folgen geladen.`;
     buildSuggestions(episodes);
     applyFilter(searchInput.value);
-
-    catalogCount.textContent = `${episodes.length.toLocaleString("de-DE")} Tatort-Folgen geladen.`;
     if (!syncResult.error) {
       await persistEpisodesCache();
     }
