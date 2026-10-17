@@ -9,6 +9,40 @@ const EXPORT_STORAGE_KEYS = [
   "tatorttracker.broadcast-count.v2"
 ];
 const EXPORT_FILE_NAME = "tatorttracker-backup.json";
+const TEXT_RATING_FIELDS = [
+  "zuerstGesehen",
+  "mostLovedCharacter",
+  "mostHatedCharacter",
+  "kommentare"
+];
+
+function createRatingsExport(rawValue) {
+  try {
+    const parsed = JSON.parse(rawValue);
+    if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) {
+      return rawValue;
+    }
+
+    const ratings = {};
+    for (const [episodeNo, entry] of Object.entries(parsed)) {
+      if (!entry || typeof entry !== "object" || Array.isArray(entry)) {
+        ratings[episodeNo] = entry;
+        continue;
+      }
+
+      ratings[episodeNo] = { ...entry };
+      for (const field of TEXT_RATING_FIELDS) {
+        if (!(field in ratings[episodeNo])) {
+          ratings[episodeNo][field] = "";
+        }
+      }
+    }
+
+    return JSON.stringify(ratings);
+  } catch {
+    return rawValue;
+  }
+}
 
 function createExportPayload() {
   const localStorageData = {};
@@ -16,7 +50,9 @@ function createExportPayload() {
   for (const key of EXPORT_STORAGE_KEYS) {
     const value = localStorage.getItem(key);
     if (value !== null) {
-      localStorageData[key] = value;
+      localStorageData[key] = key === "tatort-tracker-ratings-v1"
+        ? createRatingsExport(value)
+        : value;
     }
   }
 
