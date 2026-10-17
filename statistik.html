@@ -17,6 +17,10 @@
     <main class="app statistik-page">
       <header class="app-header">
         <h1>Statistik</h1>
+        <div class="export-controls">
+          <button class="export-button" type="button" data-export-data>Daten exportieren</button>
+          <span class="export-status" data-export-status aria-live="polite"></span>
+        </div>
       </header>
 
       <section class="card statistik-frame" aria-labelledby="statistik-title">
@@ -72,5 +76,6 @@
     </footer>
 
     <script src="statistik.js" defer></script>
+    <script src="export.js" defer></script>
   </body>
 </html>

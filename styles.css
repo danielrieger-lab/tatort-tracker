@@ -63,6 +63,38 @@ button {
   font-size: clamp(2rem, 5vw, 2.6rem);
 }
 
+.export-controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.export-button {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--card);
+  color: var(--text);
+  padding: 9px 12px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.export-button:active {
+  background: rgba(53, 24, 90, 0.6);
+}
+
+.export-status {
+  min-height: 1.4em;
+  font-size: 0.9rem;
+  opacity: 0.88;
+}
+
+.export-status-error {
+  color: #ff9b9b;
+}
+
 .app-header p {
   margin-top: 4px;
 }

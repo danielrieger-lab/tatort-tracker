@@ -17,6 +17,10 @@
     <main class="app">
       <header class="app-header">
         <h1>Tatort Tracker</h1>
+        <div class="export-controls">
+          <button class="export-button" type="button" data-export-data>Daten exportieren</button>
+          <span class="export-status" data-export-status aria-live="polite"></span>
+        </div>
       </header>
 
       <section class="card" aria-labelledby="list-title">
@@ -66,5 +70,6 @@
     </footer>
 
     <script src="app.js" defer></script>
+    <script src="export.js" defer></script>
   </body>
 </html>
