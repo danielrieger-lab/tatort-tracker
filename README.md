@@ -25,7 +25,8 @@ npx serve .
 - Installierbar auf Android und iOS (über Browser-Installfunktion / Zum Home-Bildschirm)
 - Offline-fähige Shell durch Service Worker
 - Bewertungen lokal auf dem Gerät gespeichert (`localStorage`)
-- Export der gespeicherten Tatort-Daten und Bewertungen als JSON-Backup
+- Export der gespeicherten Tatort-Daten und Bewertungen als JSON-Backup, einschließlich
+  Bewertungswerten, zuerst-gesehen-Datum, Lieblings- und unbeliebtem Charakter sowie Kommentaren
 - Auf iOS und Android über das native Teilen-Menü oder den Datei-Download nutzbar
 - Designvorgaben:
   - App-Hintergrund `#000000`
